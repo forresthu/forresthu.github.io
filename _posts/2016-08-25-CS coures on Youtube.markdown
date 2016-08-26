@@ -4,7 +4,9 @@ title:  "Stanford/MIT Computer Science coures on Youtube"
 date:   2016-08-25 22:30:28 -0400
 categories: Courses CS
 ---
+
 Following CS coures are on Youtube.
+
 ####Standford
 CS231N Computer Vision
 CS224D Natual Lanugage Processing
