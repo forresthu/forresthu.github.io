@@ -8,13 +8,13 @@ categories: Courses CS
 Following CS coures are on Youtube.
 
 #### Standford  
-CS231N Computer Vision  
-CS224D Natual Lanugage Processing  
-CS221  AI  
-CS229  Machine Learning  
-CS183  Five stage of Blitzscaling  
-CS193P iOS programming  
-CS108  Programming Paradigram  
+* CS231N Computer Vision  
+* CS224D Natual Lanugage Processing  
+* CS221  AI  
+* CS229  Machine Learning  
+* CS183  Five stage of Blitzscaling  
+* CS193P iOS programming  
+* CS108  Programming Paradigram  
 
 #### MIT  
 6.832 Dynamic Robotics  
