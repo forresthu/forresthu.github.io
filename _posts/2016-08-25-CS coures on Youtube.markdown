@@ -20,7 +20,7 @@ CS108  Programming Paradigram
 6.832 Dynamic Robotics  
 6.854 Advanced Algorithm  
 6.858 Security  
-6.828 OS  
+6.828 OS
 6.851 Advanced Data Structure  
 6.034 AI 
 6.830 Database  
