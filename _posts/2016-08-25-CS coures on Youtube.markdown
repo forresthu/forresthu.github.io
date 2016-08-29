@@ -27,4 +27,4 @@ Following CS courses are on Youtube.
 * 6.824 Distributed System  
 
 ### Waterloo
-* ME 597  Autonomous Mobile Robotics 
+* ME 597  [Autonomous Mobile Robotics](http://wavelab.uwaterloo.ca/?page_id=267)
