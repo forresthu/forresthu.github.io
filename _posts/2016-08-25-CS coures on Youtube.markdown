@@ -25,3 +25,6 @@ Following CS courses are on Youtube.
 * 6.034 AI 
 * 6.830 Database  
 * 6.824 Distributed System  
+
+### Waterloo
+* ME 597  Autonomous Mobile Robotics 
