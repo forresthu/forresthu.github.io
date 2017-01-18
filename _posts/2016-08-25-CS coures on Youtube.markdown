@@ -28,3 +28,6 @@ Following CS courses are on Youtube.
 
 ### Waterloo
 * ME 597  [Autonomous Mobile Robotics](http://wavelab.uwaterloo.ca/?page_id=267)
+
+### Udacity
+* Computer Vision
