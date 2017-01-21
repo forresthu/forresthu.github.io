@@ -12,7 +12,7 @@ Use angular-cli to quick start the project
 ### Different of DOM property and HTML element attribute
 DOM is a in memory representation of HTML. HTML is static but DOM is a tree and is dynamic. 
 HTML attribute initialize DOM properties and then they are done. Property values can change; attribute value can't. 
-
+Understaning the difference of property and attribute is crutial for understanding the data binding in the world of Angular. 
 
 ### Service
 
