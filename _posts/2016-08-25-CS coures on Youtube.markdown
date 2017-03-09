@@ -8,7 +8,7 @@ categories: Courses CS
 Following CS courses are on Youtube.
 
 ### Standford  
-* CS231N Computer Vision  
+* [CS231N Convolutional Neural Networks for Visual Recognition](https://www.youtube.com/watch?v=g-PvXUjD6qg&list=PLlJy-eBtNFt6EuMxFYRiNRS07MCWN5UIA)  
 * CS224D Natural Language Processing  
 * CS221  AI  
 * CS229  Machine Learning  
