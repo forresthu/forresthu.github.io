@@ -16,6 +16,9 @@ Following CS courses are on Youtube.
 * CS193P iOS programming  
 * CS108  Programming Paradigm  
 
+### Oxford
+* [Deep Learning for Natural Language Processing:  2016-2017](https://github.com/oxford-cs-deepnlp-2017/lectures)
+
 ### MIT  
 * 6.832 Dynamic Robotics  
 * 6.854 Advanced Algorithm  
