@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "1. TensorFlow the basis"
-date:   2016-06-21 22:30:28 -0400
+date:   2017-03-21 22:30:28 -0400
 categories: TensorFlow tutorial
 ---
 
