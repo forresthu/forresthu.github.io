@@ -60,8 +60,6 @@ with tf.Session() as sess:
     print("======Print Reshape=========")
     print(sess.run(tf.reshape(tensor_matrix, [2, -1] )))
     print(sess.run(tf.reshape(tensor_matrix, [-1])))
-
-
 ```
 
 
