@@ -47,7 +47,11 @@ SVM vs Softmax
 
 ## Opimization
 * Random (try and trail)
-* 
+* Follow the slope
+  Numerical gradient
+  Analytic gradient
+  
+  
 
 
 
