@@ -10,7 +10,7 @@ A TensorFlow tensor is sort of n-dimentional array or list. A tensor has a stati
 Only tensors may be passed between ops in the computation graph. 
 
 
-#### Rank
+### Rank
 Tensor rank is the number of dimension of the tensor
    * Rnak 0: Scalar
    * Rank 1: Vector
@@ -19,11 +19,11 @@ Tensor rank is the number of dimension of the tensor
    * ...
    * Rank n: n-Tensor
 
-#### Shape
+### Shape
 
 ### Type
 Tensor has it own data type schema, such as float32, int64, and strin etc. 
-
+    
 ```python
 import tensorflow as tf
 
@@ -68,3 +68,8 @@ with tf.Session() as sess:
 ## Computation Graph
 
 ## Tensorboard
+Computation Graph visulization tool. After install TF1.0 by Anaconda 3.5, a executable file tensorboard.exe will be put under Scripts subfolder of Anaconda. 
+'''sh
+tensorboard --logdir=c:/temp  #In Windows, make sure to use backslash for file path delimiter. 
+Open Chrome and brower http://localhost:6006 for access TensorBoard. # Does not work with IE or Edge
+'''
