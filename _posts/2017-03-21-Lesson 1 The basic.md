@@ -69,7 +69,14 @@ with tf.Session() as sess:
 
 ## Tensorboard
 Computation Graph visulization tool. After install TF1.0 by Anaconda 3.5, a executable file tensorboard.exe will be put under Scripts subfolder of Anaconda. 
-'''sh
+```shell
 tensorboard --logdir=c:/temp  #In Windows, make sure to use backslash for file path delimiter. 
 Open Chrome and brower http://localhost:6006 for access TensorBoard. # Does not work with IE or Edge
-'''
+```
+
+In order to write computational graph, use code like below
+
+```python
+with tf.Session() as sess:
+    writer = tf.summary.FileWriter("c:\\temp", tf.get_default_graph())
+```
