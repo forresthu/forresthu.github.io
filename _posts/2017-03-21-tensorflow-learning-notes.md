@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Tensor Resources"
+date:   2017-03-21 22:30:28 -0400
+categories: TensorFlow tutorial
+---
+
+
 ### Environment Setup on my Windows 10 laptop
 * Anaconda 4.2 for Python3
 * Tensorflow 1.0  
