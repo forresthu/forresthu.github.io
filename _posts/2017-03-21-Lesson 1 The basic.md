@@ -78,5 +78,5 @@ In order to write computational graph, use code like below
 
 ```python
 with tf.Session() as sess:
-    writer = tf.summary.FileWriter("c:\\temp", tf.get_default_graph())
+    writer = tf.summary.FileWriter("c:/temp", tf.get_default_graph())
 ```
