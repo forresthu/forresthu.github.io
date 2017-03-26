@@ -9,7 +9,7 @@ categories: Computer Vision, Convelutional NN
 
 ### Lost function
 * SVM (hinge loss)
-* Cross-entropy loss function(softmax)
-$$ \sqrt(\sin(x)) $$
+* Cross-entropy loss function(softmax) 
+$ \sum_{\forall i}{x_i^{2}} $
 ### Optimiation
     
