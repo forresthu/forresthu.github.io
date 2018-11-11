@@ -10,7 +10,7 @@ categories: [Machine Learning, Convelutional NN]
 * SVM (hinge loss)
 * Cross-entropy loss function(softmax) 
 
-You can use an inline formula $$\forall x \in R$$ like this one  
+You can use an inline formula $$\forall x \in R$$ like this one 
 Or centered formula like  
 $$
 M = \left( \begin{array}{ccc}
