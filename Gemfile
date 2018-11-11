@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
-gem "nokogiri", ">= 1.6.7.rc3"
+gem "just-the-docs"
 gem 'github-pages', group: :jekyll_plugins

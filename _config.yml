@@ -20,4 +20,5 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
-theme: jekyll-theme-cayman
+theme: just-the-docs
+#theme: jekyll-theme-cayman
