@@ -2,7 +2,7 @@
 
 layout: post
 title: java exception
-category: 技术
+category: Technology
 tags: Java
 keywords: JAVA exception
 

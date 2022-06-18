@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kubernetes副本管理
-category: 技术
+category: Technology
 tags: Kubernetes
 keywords:  Kubernetes replica
 ---

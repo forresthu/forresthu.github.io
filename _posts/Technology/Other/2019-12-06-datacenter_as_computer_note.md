@@ -2,7 +2,7 @@
 
 layout: post
 title: 《datacenter as a computer》笔记
-category: 技术
+category: Technology
 tags: Other
 keywords: datacenter
 

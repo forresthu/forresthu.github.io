@@ -2,7 +2,7 @@
 
 layout: post
 title: codereview
-category: 技术
+category: Technology
 tags: Code
 keywords:  codereview
 

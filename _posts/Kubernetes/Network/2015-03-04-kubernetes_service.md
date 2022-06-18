@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 访问Kubernetes上的Service
-category: 技术
+category: Technology
 tags: Kubernetes
 keywords: Kubernetes Service
 ---

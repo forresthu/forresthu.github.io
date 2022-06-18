@@ -2,7 +2,7 @@
 
 layout: post
 title: 基于Volcano的弹性训练
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords:  elastic training
 

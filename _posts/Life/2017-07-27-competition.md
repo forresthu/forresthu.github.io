@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 人生路，你不是坐在观众席上，而是在角斗场中
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 生活 感想
 ---

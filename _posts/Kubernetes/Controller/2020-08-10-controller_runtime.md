@@ -2,7 +2,7 @@
 
 layout: post
 title: controller-runtime源码分析
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords: controller-runtime 
 ---

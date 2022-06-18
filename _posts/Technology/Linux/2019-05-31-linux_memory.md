@@ -2,7 +2,7 @@
 
 layout: post
 title: Linux内存管理
-category: 技术
+category: Technology
 tags: Linux
 keywords: linux 内核
 

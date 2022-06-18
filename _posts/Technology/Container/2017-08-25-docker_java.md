@@ -2,7 +2,7 @@
 
 layout: post
 title: docker运行java项目的常见问题
-category: 技术
+category: Technology
 tags: Container
 keywords: Docker java
 

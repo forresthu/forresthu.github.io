@@ -2,7 +2,7 @@
 
 layout: post
 title: 分布式训练的一些问题
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords:  distributed training
 

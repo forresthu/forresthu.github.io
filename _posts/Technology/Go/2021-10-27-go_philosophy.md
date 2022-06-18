@@ -2,7 +2,7 @@
 
 layout: post
 title: go设计哲学
-category: 技术
+category: Technology
 tags: Go
 keywords: go 设计哲学
 

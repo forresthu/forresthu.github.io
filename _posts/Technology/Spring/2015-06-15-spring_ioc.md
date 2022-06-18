@@ -2,7 +2,7 @@
 
 layout: post
 title: 回头看Spring IOC
-category: 技术
+category: Technology
 tags: Spring
 keywords: JAVA Spring
 

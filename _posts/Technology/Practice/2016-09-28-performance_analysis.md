@@ -2,7 +2,7 @@
 
 layout: post
 title: 性能问题分析
-category: 架构
+category: Architecture
 tags: Practice
 keywords: performance
 

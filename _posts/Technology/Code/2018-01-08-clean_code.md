@@ -2,7 +2,7 @@
 
 layout: post
 title: 《clean code》笔记
-category: 技术
+category: Technology
 tags: Code
 keywords: clean code
 

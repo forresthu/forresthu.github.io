@@ -2,7 +2,7 @@
 
 layout: post
 title: Redis源码分析
-category: 技术
+category: Technology
 tags: Storage
 keywords: Redis
 

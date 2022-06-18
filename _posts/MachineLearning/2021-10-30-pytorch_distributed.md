@@ -2,7 +2,7 @@
 
 layout: post
 title: pytorch分布式训练
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords:  pytorch distributed
 

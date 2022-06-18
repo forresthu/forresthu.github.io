@@ -2,7 +2,7 @@
 
 layout: post
 title: 《docker源码分析》小结
-category: 技术
+category: Technology
 tags: Container
 keywords: Docker,source
 

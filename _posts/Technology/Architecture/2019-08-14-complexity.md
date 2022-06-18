@@ -2,7 +2,7 @@
 
 layout: post
 title: 处理复杂性
-category: 架构
+category: Architecture
 tags: Architecture
 keywords: complexity
 

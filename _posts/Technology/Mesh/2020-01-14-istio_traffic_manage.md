@@ -2,7 +2,7 @@
 
 layout: post
 title: istio流量管理
-category: 技术
+category: Technology
 tags: Mesh
 keywords: pilot service mesh
 

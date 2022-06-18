@@ -2,7 +2,7 @@
 
 layout: post
 title: 区块链泛谈
-category: 技术
+category: Technology
 tags: Other
 keywords: block chain
 

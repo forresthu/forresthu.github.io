@@ -2,7 +2,7 @@
 
 layout: post
 title: 《左耳听风》笔记
-category: 架构
+category: Architecture
 tags: Architecture
 keywords: 左耳听风
 

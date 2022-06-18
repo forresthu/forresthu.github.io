@@ -2,7 +2,7 @@
 
 layout: post
 title: 认知的几点规律
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 认知
 

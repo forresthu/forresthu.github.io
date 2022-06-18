@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kubernetes存储
-category: 技术
+category: Technology
 tags: Kubernetes
 keywords: Docker Kubernetes Volume
 ---

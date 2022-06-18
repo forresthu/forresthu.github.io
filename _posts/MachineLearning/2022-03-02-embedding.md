@@ -2,7 +2,7 @@
 
 layout: post
 title: embedding的原理及实践
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords: embedding
 

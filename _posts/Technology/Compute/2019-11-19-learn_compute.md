@@ -2,7 +2,7 @@
 
 layout: post
 title: 学计算
-category: 技术
+category: Technology
 tags: Compute
 keywords: Compute
 

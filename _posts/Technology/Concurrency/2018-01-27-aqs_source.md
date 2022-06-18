@@ -2,7 +2,7 @@
 
 layout: post
 title: AQS——粗略的代码分析
-category: 技术
+category: Technology
 tags: Concurrency
 keywords: AQS
 

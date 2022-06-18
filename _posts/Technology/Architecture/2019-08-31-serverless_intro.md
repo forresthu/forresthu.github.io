@@ -2,7 +2,7 @@
 
 layout: post
 title: serverless 泛谈
-category: 架构
+category: Architecture
 tags: Architecture
 keywords: serverless
 

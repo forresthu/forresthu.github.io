@@ -2,7 +2,7 @@
 
 layout: post
 title: 自己动手写spring（三） 支持注解方式
-category: 技术
+category: Technology
 tags: Spring
 keywords: Java Spring annotation
 

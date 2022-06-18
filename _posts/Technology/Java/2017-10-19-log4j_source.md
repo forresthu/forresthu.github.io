@@ -2,7 +2,7 @@
 
 layout: post
 title: log4j学习
-category: 技术
+category: Technology
 tags: Java
 keywords: log4j 
 

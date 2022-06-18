@@ -2,7 +2,7 @@
 
 layout: post
 title: 《持续交付36讲》笔记
-category: 技术
+category: Technology
 tags: Container
 keywords: 持续交付
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: Prometheus 告警学习
-category: 技术
+category: Technology
 tags: Monitor
 keywords: Prometheus alert
 

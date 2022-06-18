@@ -2,7 +2,7 @@
 
 layout: post
 title: 推理服务
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords:  mpi
 

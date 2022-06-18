@@ -2,7 +2,7 @@
 
 layout: post
 title: 反应式架构摸索
-category: 架构
+category: Architecture
 tags: Reactive
 keywords: reactive
 

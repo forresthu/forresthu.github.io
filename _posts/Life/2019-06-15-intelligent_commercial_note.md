@@ -2,7 +2,7 @@
 
 layout: post
 title: 《智能商业》笔记
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 智能商业
 

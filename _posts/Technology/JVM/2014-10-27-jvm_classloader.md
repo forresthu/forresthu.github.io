@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JVM类加载
-category: 技术
+category: Technology
 tags: JVM
 keywords: JAVA JVM
 ---

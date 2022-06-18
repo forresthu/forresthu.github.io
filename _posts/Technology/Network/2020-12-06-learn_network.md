@@ -2,7 +2,7 @@
 
 layout: post
 title: 学习网络
-category: 技术
+category: Technology
 tags: Network
 keywords: network
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: spring aop 实现原理简述
-category: 技术
+category: Technology
 tags: Spring
 keywords: proxyFactoryBean
 

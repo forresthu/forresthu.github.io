@@ -2,7 +2,7 @@
 
 layout: post
 title: 让kafka支持优先级队列
-category: 技术
+category: Technology
 tags: MQ
 keywords: kafka
 

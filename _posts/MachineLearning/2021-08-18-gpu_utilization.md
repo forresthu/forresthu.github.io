@@ -2,7 +2,7 @@
 
 layout: post
 title: 提高gpu 利用率
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords:  gpu
 

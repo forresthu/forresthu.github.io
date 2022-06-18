@@ -2,7 +2,7 @@
 
 layout: post
 title: Linux网络源代码学习——整体介绍
-category: 技术
+category: Technology
 tags: Network
 keywords: network 
 

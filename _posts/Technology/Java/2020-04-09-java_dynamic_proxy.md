@@ -2,7 +2,7 @@
 
 layout: post
 title: Java动态代理
-category: 技术
+category: Technology
 tags: Java
 keywords: java dynamic proxy
 

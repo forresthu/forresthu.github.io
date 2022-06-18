@@ -2,7 +2,7 @@
 
 layout: post
 title: Java泛型
-category: 技术
+category: Technology
 tags: Java
 keywords: JAVA Generic Type 泛型
 

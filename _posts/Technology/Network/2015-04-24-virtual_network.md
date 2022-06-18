@@ -2,7 +2,7 @@
 
 layout: post
 title: 虚拟网络
-category: 技术
+category: Technology
 tags: Network
 keywords: virtual network
 

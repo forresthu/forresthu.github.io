@@ -2,7 +2,7 @@
 
 layout: post
 title: 《Redis核心技术与实现》笔记
-category: 技术
+category: Technology
 tags: Storage
 keywords: Redis
 

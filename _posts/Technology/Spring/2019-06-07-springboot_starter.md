@@ -2,7 +2,7 @@
 
 layout: post
 title: Springboot 启动过程分析
-category: 技术
+category: Technology
 tags: Spring
 keywords: springboot
 

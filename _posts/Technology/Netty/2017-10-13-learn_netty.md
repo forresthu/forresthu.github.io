@@ -2,7 +2,7 @@
 
 layout: post
 title: 为什么netty比较难懂？
-category: 技术
+category: Technology
 tags: Netty
 keywords: JAVA netty
 

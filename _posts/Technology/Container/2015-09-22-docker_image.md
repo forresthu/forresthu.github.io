@@ -2,7 +2,7 @@
 
 layout: post
 title: 关于docker image的那点事儿
-category: 技术
+category: Technology
 tags: Container
 keywords: Docker image Dockerfile
 

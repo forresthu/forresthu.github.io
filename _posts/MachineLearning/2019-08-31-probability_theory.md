@@ -2,7 +2,7 @@
 
 layout: post
 title: 概率论
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords:  概率论
 

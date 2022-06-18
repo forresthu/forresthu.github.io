@@ -2,7 +2,7 @@
 
 layout: post
 title: 《Concurrency Models》笔记
-category: 技术
+category: Technology
 tags: Concurrency
 keywords: 多线程 
 

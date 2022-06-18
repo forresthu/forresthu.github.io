@@ -2,7 +2,7 @@
 
 layout: post
 title: 《技术领导力300讲》笔记——管理篇
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 技术领导力
 

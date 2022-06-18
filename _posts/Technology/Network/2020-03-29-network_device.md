@@ -2,7 +2,7 @@
 
 layout: post
 title: 《网络是怎样连接的》笔记
-category: 技术
+category: Technology
 tags: Network
 keywords: network device
 

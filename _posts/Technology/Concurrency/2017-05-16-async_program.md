@@ -2,7 +2,7 @@
 
 layout: post
 title: 不同层面的异步
-category: 架构
+category: Architecture
 tags: Concurrency
 keywords: 异步
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: Prometheus client
-category: 技术
+category: Technology
 tags: Monitor
 keywords: Prometheus 客户端库
 

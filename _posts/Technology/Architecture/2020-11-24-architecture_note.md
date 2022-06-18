@@ -2,7 +2,7 @@
 
 layout: post
 title: 《许式伟的架构课》笔记
-category: 架构
+category: Architecture
 tags: Architecture
 keywords: 许式伟 架构 
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: helm
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords:  Kubernetes 混部
 

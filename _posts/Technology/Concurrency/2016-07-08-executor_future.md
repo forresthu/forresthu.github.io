@@ -2,7 +2,7 @@
 
 layout: post
 title: 异步执行抽象——Executor与Future
-category: 技术
+category: Technology
 tags: Concurrency
 keywords: future
 

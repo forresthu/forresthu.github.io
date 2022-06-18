@@ -2,7 +2,7 @@
 
 layout: post
 title: Kubernetes webhook
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords:  Kubernetes webhook
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: ddd反模式——CRUD的败笔
-category: 架构
+category: Architecture
 tags: DDD
 keywords: ddd cqrs
 

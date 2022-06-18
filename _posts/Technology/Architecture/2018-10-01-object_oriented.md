@@ -2,7 +2,7 @@
 
 layout: post
 title: 重新看面向对象设计
-category: 架构
+category: Architecture
 tags: Architecture
 keywords: 面向对象
 

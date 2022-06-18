@@ -2,7 +2,7 @@
 
 layout: post
 title: 线程排队
-category: 技术
+category: Technology
 tags: Concurrency
 keywords: thread queue
 

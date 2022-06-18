@@ -2,7 +2,7 @@
 
 layout: post
 title: 消息/任务队列
-category: 架构
+category: Architecture
 tags: MQ
 keywords: 消息队列 rabbitmq kafka
 

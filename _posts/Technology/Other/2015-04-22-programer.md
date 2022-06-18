@@ -2,7 +2,7 @@
 
 layout: post
 title: 《程序员的自我修养》小结
-category: 技术
+category: Technology
 tags: Other
 keywords: 程序员的自我修养 链接
 

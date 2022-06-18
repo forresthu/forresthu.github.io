@@ -2,7 +2,7 @@
 
 layout: post
 title: 基础设施优化
-category: 技术
+category: Technology
 tags: Basic
 keywords: infrastructure optimization
 

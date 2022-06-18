@@ -2,7 +2,7 @@
 
 layout: post
 title: javascript应用在哪里
-category: 技术
+category: Technology
 tags: WEB
 keywords: javascript
 

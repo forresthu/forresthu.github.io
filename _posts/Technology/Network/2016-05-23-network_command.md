@@ -2,7 +2,7 @@
 
 layout: post
 title: Linux网络命令操作
-category: 技术
+category: Technology
 tags: Network
 keywords: network ovs
 

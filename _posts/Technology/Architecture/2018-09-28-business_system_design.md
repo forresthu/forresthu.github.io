@@ -2,7 +2,7 @@
 
 layout: post
 title: 业务系统设计的一些体会
-category: 架构
+category: Architecture
 tags: Architecture
 keywords: 系统设计
 

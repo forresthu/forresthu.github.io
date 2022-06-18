@@ -2,7 +2,7 @@
 
 layout: post
 title: jvm crash分析
-category: 技术
+category: Technology
 tags: JVM
 keywords: jvm crash
 

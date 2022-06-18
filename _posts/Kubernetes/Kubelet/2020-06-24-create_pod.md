@@ -2,7 +2,7 @@
 
 layout: post
 title: Pod是如何被创建出来的？
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords:  create pod
 

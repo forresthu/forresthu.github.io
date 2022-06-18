@@ -2,7 +2,7 @@
 
 layout: post
 title: 回溯法
-category: 技术
+category: Technology
 tags: Algorithm
 keywords: backtracking
 
@@ -14,7 +14,8 @@ keywords: backtracking
 
 本文涉及到两道题目：
 
-1. 利用字符‘a’、‘b’ 、 ‘c’ 、‘d’ 、‘e’ 、‘f’、‘g’生成并输出所有可能的字符串（但字符不可重复使用，输出顺序无要求），比如：“a”、“b”、“c”、“d”、“e”、“f”、“g”、“ab”、“ba”、“ac”、“ca”
+1. 利用字符‘a’、‘b’ 、 ‘c’ 、‘d’ 、‘e’ 、‘f’、‘g’生成并输出所有可能的字符串（但字符不可重复使用，输出顺序无要求），比如：
+“a”、“b”、“c”、“d”、“e”、“f”、“g”、“ab”、“ba”、“ac”、“ca”
 
 2.   集合A的幂集是由集合A的所有子集所组成的的集合，如：```A=1，2，3```，则A的幂集```P（A）={1，2，3}，{1，2}，{1，3}，{1}，{2，3}，{2}，{3}，{ }```，求一个集合的幂集就是求一个集合的所有的子集。来自[回溯法求幂集](http://www.cnblogs.com/youxin/p/3219523.html) 
 

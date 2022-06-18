@@ -2,7 +2,7 @@
 
 layout: post
 title: 《动手学深度学习》笔记
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords:  线性回归 pytorch
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: 《阿里技术人生》系列小结
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 阿里 技术人生
 

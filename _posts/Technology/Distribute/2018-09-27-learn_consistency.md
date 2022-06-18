@@ -2,7 +2,7 @@
 
 layout: post
 title: 串一串一致性协议
-category: 技术
+category: Technology
 tags: Distribute
 keywords: 一致性协议
 

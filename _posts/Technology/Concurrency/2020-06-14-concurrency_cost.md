@@ -2,7 +2,7 @@
 
 layout: post
 title: 并发的成本
-category: 技术
+category: Technology
 tags: Concurrency
 keywords: Concurrency cost
 

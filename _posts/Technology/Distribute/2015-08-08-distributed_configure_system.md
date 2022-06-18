@@ -2,7 +2,7 @@
 
 layout: post
 title: 分布式配置系统
-category: 技术
+category: Technology
 tags: Distribute
 keywords: 分布式配置系统 zookeeper etcd Consul
 

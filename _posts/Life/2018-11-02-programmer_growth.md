@@ -2,7 +2,7 @@
 
 layout: post
 title: 程序猿成长
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 程序猿成长
 

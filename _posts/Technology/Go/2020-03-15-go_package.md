@@ -2,7 +2,7 @@
 
 layout: post
 title: go打包机制
-category: 技术
+category: Technology
 tags: Go
 keywords: Go 打包
 

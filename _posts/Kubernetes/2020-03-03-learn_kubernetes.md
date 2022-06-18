@@ -2,7 +2,7 @@
 
 layout: post
 title: 如何学习Kubernetes
-category: 技术
+category: Technology
 tags: Kubernetes
 keywords: learn kubernetes 
 

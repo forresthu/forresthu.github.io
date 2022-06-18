@@ -2,7 +2,7 @@
 
 layout: post
 title: jvm 线程实现
-category: 技术
+category: Technology
 tags: Concurrency
 keywords: jvm concurrency
 

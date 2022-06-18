@@ -2,7 +2,7 @@
 
 layout: post
 title: 软件机制
-category: 技术
+category: Technology
 tags: Basic
 keywords: software mechanism
 

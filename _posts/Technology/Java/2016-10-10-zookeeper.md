@@ -2,7 +2,7 @@
 
 layout: post
 title: zookeeper三重奏
-category: 技术
+category: Technology
 tags: Java
 keywords: zookeeper
 

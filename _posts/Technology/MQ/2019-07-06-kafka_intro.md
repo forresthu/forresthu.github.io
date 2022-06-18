@@ -2,7 +2,7 @@
 
 layout: post
 title: 《Apache Kafka源码分析》——简介
-category: 技术
+category: Technology
 tags: MQ
 keywords: Scala  akka
 

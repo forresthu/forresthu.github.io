@@ -2,7 +2,7 @@
 
 layout: post
 title: client-go学习
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords:  kubernetes client-go
 

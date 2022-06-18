@@ -2,7 +2,7 @@
 
 layout: post
 title: virtualbox 使用
-category: 技术
+category: Technology
 tags: Tool
 keywords: virtualbox 虚拟机
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: 如何学习机器学习
-category: 技术
+category: Technology
 tags: MachineLearning
 keywords: 深度学习
 

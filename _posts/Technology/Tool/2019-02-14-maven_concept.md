@@ -2,7 +2,7 @@
 
 layout: post
 title: maven的基本概念
-category: 技术
+category: Technology
 tags: Tool
 keywords: maven
 

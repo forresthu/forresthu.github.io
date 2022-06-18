@@ -2,7 +2,7 @@
 
 layout: post
 title: 编程范式
-category: 技术
+category: Technology
 tags: Basic
 keywords:  programming paradigms
 

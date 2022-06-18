@@ -2,7 +2,7 @@
 
 layout: post
 title: docker namespace和cgroup
-category: 技术
+category: Technology
 tags: Container
 keywords: network 
 

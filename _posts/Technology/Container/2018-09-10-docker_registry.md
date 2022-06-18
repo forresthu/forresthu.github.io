@@ -2,7 +2,7 @@
 
 layout: post
 title: harbor学习
-category: 技术
+category: Technology
 tags: Container
 keywords: docker registry
 

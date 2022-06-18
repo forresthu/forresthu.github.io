@@ -2,7 +2,7 @@
 
 layout: post
 title: mosn有的没的
-category: 技术
+category: Technology
 tags: Mesh
 keywords: mosn detail
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: 编写java框架的几大利器
-category: 技术
+category: Technology
 tags: Java
 keywords: JAVA spi xsd
 

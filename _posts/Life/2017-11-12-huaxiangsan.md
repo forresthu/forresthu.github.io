@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 记第一次飞翔
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 生活 滑翔伞
 ---

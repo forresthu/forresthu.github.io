@@ -2,7 +2,7 @@
 
 layout: post
 title: guava cache 源码分析
-category: 技术
+category: Technology
 tags: Java
 keywords: kafka
 

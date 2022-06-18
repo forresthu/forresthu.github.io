@@ -2,7 +2,7 @@
 
 layout: post
 title: 架构大杂烩
-category: 架构
+category: Architecture
 tags: Architecture
 keywords: 聊聊架构
 

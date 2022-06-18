@@ -2,7 +2,7 @@
 
 layout: post
 title: go interface及反射
-category: 技术
+category: Technology
 tags: Go
 keywords: Go interface reflect
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: Scala初识
-category: 技术
+category: Technology
 tags: Scala
 keywords: Scala 
 

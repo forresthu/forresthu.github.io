@@ -2,7 +2,7 @@
 
 layout: post
 title: jib源码分析之细节
-category: 技术
+category: Technology
 tags: Container
 keywords: jib
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: 负载均衡泛谈
-category: 技术
+category: Technology
 tags: Network
 keywords: Docker, calico
 

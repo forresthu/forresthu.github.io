@@ -2,7 +2,7 @@
 
 layout: post
 title: go编译器
-category: 技术
+category: Technology
 tags: Go
 keywords: go compiler
 

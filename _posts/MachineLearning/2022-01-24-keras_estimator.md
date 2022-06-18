@@ -2,7 +2,7 @@
 
 layout: post
 title: keras 和 Estimator
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords:  tensorflow keras Estimator
 

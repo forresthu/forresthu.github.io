@@ -2,7 +2,7 @@
 
 layout: post
 title: 《编译原理之美》笔记——前端部分
-category: 技术
+category: Technology
 tags: Basic
 keywords:  Fundamentals Compiling
 

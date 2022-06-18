@@ -2,7 +2,7 @@
 
 layout: post
 title: netty中的线程池
-category: 技术
+category: Technology
 tags: Netty
 keywords: JAVA netty
 

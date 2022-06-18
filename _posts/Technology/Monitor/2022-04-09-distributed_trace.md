@@ -2,7 +2,7 @@
 
 layout: post
 title: 分布式链路追踪
-category: 架构
+category: Architecture
 tags: Monitor
 keywords: trace
 

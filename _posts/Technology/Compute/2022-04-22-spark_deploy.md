@@ -2,7 +2,7 @@
 
 layout: post
 title: 从Spark部署模式开始讲源码分析
-category: 技术
+category: Technology
 tags: Compute
 keywords: Spark
 

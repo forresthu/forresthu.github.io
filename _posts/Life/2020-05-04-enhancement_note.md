@@ -2,7 +2,7 @@
 
 layout: post
 title: 《精进》笔记
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 精进
 

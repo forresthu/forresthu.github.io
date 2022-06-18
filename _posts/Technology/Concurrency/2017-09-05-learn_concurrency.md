@@ -2,7 +2,7 @@
 
 layout: post
 title: 学习并发
-category: 技术
+category: Technology
 tags: Concurrency
 keywords: concurrency
 

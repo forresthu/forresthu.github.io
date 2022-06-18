@@ -2,7 +2,7 @@
 
 layout: post
 title: tensorflow学习
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords:  tensorflow
 

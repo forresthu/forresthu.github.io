@@ -2,7 +2,7 @@
 
 layout: post
 title: netty在框架中的使用套路
-category: 技术
+category: Technology
 tags: Netty
 keywords: JAVA in framework
 

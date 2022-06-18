@@ -2,7 +2,7 @@
 
 layout: post
 title: apple 推送那些事儿
-category: 技术
+category: Technology
 tags: Practice
 keywords: Practice
 

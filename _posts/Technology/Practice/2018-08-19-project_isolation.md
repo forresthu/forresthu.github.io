@@ -2,7 +2,7 @@
 
 layout: post
 title: 项目隔离——案例研究
-category: 架构
+category: Architecture
 tags: Practice
 keywords: test environment
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: AI云平台
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords:  ai platform
 

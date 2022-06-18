@@ -2,7 +2,7 @@
 
 layout: post
 title: 如何分发计算
-category: 技术
+category: Technology
 tags: Compute
 keywords: 分布式系统
 

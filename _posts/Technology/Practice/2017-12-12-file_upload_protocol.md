@@ -2,7 +2,7 @@
 
 layout: post
 title: 现有上传协议分析
-category: 架构
+category: Architecture
 tags: Practice
 keywords: fileupload
 

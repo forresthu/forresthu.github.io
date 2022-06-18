@@ -2,7 +2,7 @@
 
 layout: post
 title: Linux可观测性
-category: 技术
+category: Technology
 tags: Linux
 keywords: 可观测性
 

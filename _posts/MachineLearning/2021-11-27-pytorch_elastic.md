@@ -2,7 +2,7 @@
 
 layout: post
 title: pytorch弹性分布式训练
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords:  pytorch distributed elastic 弹性
 

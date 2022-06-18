@@ -2,7 +2,7 @@
 
 layout: post
 title: 学习Linux
-category: 技术
+category: Technology
 tags: Linux
 keywords: linux
 

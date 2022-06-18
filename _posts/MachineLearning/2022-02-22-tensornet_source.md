@@ -2,7 +2,7 @@
 
 layout: post
 title: tensornet源码分析
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords: tensornet
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: 对技术趋势的应对
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: technology
 

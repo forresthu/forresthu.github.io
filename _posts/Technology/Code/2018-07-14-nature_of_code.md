@@ -2,7 +2,7 @@
 
 layout: post
 title: 《编程的本质》笔记
-category: 架构
+category: Architecture
 tags: Code
 keywords: nature  code
 

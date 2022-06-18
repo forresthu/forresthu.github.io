@@ -2,7 +2,7 @@
 
 layout: post
 title: 初级权限系统设计
-category: 架构
+category: Architecture
 tags: Practice
 keywords: Permission
 

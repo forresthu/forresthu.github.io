@@ -2,7 +2,7 @@
 
 layout: post
 title: 《how tomcat works》笔记
-category: 技术
+category: Technology
 tags: Java
 keywords: tomcat
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: controller 组件介绍
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords: controller
 ---

@@ -2,7 +2,7 @@
 
 layout: post
 title: Scheduler如何给Node打分
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords: Scheduler Score prioritizeNodes
 ---

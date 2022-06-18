@@ -2,7 +2,7 @@
 
 layout: post
 title: 《数学之美》笔记
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 数学之美
 

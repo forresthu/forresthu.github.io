@@ -2,7 +2,7 @@
 
 layout: post
 title: 汇编语言
-category: 技术
+category: Technology
 tags: Basic
 keywords: 汇编语言
 

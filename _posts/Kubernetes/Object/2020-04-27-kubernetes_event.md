@@ -2,7 +2,7 @@
 
 layout: post
 title: Kubernetes events学习及应用
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords:  Kubernetes event
 

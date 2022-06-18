@@ -2,7 +2,7 @@
 
 layout: post
 title: hashicorp raft源码学习
-category: 技术
+category: Technology
 tags: Distribute
 keywords: 分布式系统
 

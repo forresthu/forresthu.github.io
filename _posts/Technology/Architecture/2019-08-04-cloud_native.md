@@ -2,7 +2,7 @@
 
 layout: post
 title: 什么是云原生
-category: 技术
+category: Technology
 tags: Architecture
 keywords: alibaba cloud native
 

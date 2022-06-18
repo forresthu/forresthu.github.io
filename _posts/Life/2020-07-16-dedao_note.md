@@ -2,7 +2,7 @@
 
 layout: post
 title: 得到课程笔记汇总
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 精力管理
 

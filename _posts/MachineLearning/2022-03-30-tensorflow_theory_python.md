@@ -2,7 +2,7 @@
 
 layout: post
 title: tensorflow原理——python层分析
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords: tensorflow python
 

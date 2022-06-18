@@ -2,7 +2,7 @@
 
 layout: post
 title: Codis源码分析
-category: 技术
+category: Technology
 tags: Go
 keywords: Codis
 

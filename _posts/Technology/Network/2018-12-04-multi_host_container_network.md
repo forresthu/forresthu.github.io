@@ -2,7 +2,7 @@
 
 layout: post
 title: 跨主机容器通信
-category: 技术
+category: Technology
 tags: Network
 keywords: container network
 

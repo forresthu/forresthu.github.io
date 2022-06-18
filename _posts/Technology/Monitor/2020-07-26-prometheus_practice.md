@@ -2,7 +2,7 @@
 
 layout: post
 title: 《Prometheus监控实战》笔记
-category: 技术
+category: Technology
 tags: Monitor
 keywords: Prometheus 实战
 

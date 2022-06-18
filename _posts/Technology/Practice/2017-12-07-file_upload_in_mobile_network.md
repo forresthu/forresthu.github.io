@@ -2,7 +2,7 @@
 
 layout: post
 title: 移动网络下的文件上传要注意的几个问题
-category: 架构
+category: Architecture
 tags: Practice
 keywords: fileupload
 

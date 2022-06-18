@@ -2,7 +2,7 @@
 
 layout: post
 title: 做配置中心要想好的几个基本问题
-category: 架构
+category: Architecture
 tags: Practice
 keywords: config center
 

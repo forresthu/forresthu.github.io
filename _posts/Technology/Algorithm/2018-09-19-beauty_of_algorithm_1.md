@@ -2,7 +2,7 @@
 
 layout: post
 title: 《数据结构与算法之美》——数据结构笔记
-category: 技术
+category: Technology
 tags: Algorithm
 keywords: 数据结构与算法之美
 

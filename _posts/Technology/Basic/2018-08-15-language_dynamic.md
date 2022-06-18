@@ -2,7 +2,7 @@
 
 layout: post
 title: 编程语言那些事儿
-category: 技术
+category: Technology
 tags: Basic
 keywords: dynamic
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: Kubernetes类型系统
-category: 技术
+category: Technology
 tags: Kubernetes
 keywords: kubernetes Apimachinery
 

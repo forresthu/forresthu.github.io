@@ -2,7 +2,7 @@
 
 layout: post
 title: 如何学习架构
-category: 架构
+category: Architecture
 tags: Architecture
 keywords: learn architecture
 

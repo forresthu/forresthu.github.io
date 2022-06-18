@@ -2,7 +2,7 @@
 
 layout: post
 title: 生命周期管理
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords:  lifecycle
 

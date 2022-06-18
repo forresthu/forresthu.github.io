@@ -2,7 +2,7 @@
 
 layout: post
 title: k8s批处理调度
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords: kube-batch,volcano
 ---

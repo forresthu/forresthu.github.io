@@ -2,7 +2,7 @@
 
 layout: post
 title: mosn源码浅析
-category: 技术
+category: Technology
 tags: Mesh
 keywords: mesh source
 

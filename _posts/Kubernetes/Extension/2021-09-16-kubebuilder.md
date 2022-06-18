@@ -2,7 +2,7 @@
 
 layout: post
 title: kubebuilder 学习
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords: kubebuilder
 ---

@@ -2,7 +2,7 @@
 
 layout: post
 title: web 跨域问题
-category: 技术
+category: Technology
 tags: WEB
 keywords: javascript
 

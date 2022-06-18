@@ -2,7 +2,7 @@
 
 layout: post
 title: Linux进程调度
-category: 技术
+category: Technology
 tags: Linux
 keywords: linux 进程调度
 

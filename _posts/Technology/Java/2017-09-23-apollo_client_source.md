@@ -2,7 +2,7 @@
 
 layout: post
 title: apollo client源码分析及看待面向对象设计
-category: 技术
+category: Technology
 tags: Java
 keywords: apollo configcenter
 

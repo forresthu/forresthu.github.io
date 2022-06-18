@@ -2,7 +2,7 @@
 
 layout: post
 title: docker快速入门
-category: 技术
+category: Technology
 tags: Container
 keywords: Docker Container Image
 

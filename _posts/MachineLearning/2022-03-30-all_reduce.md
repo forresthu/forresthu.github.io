@@ -2,7 +2,7 @@
 
 layout: post
 title: 数据并行——allreduce
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords: allreduce
 

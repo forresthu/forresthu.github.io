@@ -2,7 +2,7 @@
 
 layout: post
 title: 模型演变
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords: model
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: 《从0开始学架构》笔记
-category: 架构
+category: Architecture
 tags: Architecture
 keywords: 从0开始学架构
 

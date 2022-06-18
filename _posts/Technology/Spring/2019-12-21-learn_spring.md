@@ -2,7 +2,7 @@
 
 layout: post
 title: 学习Spring
-category: 技术
+category: Technology
 tags: Spring
 keywords: springboot
 

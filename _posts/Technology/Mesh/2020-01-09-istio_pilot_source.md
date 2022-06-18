@@ -2,7 +2,7 @@
 
 layout: post
 title: Pilot源码分析
-category: 技术
+category: Technology
 tags: Mesh
 keywords: pilot service mesh
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: 元编程
-category: 架构
+category: Architecture
 tags: Architecture
 keywords: meta programming
 

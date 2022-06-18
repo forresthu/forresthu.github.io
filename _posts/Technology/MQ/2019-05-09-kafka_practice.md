@@ -2,7 +2,7 @@
 
 layout: post
 title: kafka实践
-category: 技术
+category: Technology
 tags: MQ
 keywords: Scala  akka
 

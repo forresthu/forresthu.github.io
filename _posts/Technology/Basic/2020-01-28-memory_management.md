@@ -2,7 +2,7 @@
 
 layout: post
 title: 内存管理玩法汇总
-category: 技术
+category: Technology
 tags: Basic
 keywords: memory management
 

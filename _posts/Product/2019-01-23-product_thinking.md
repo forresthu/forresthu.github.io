@@ -2,7 +2,7 @@
 
 layout: post
 title: 技术人员的产品思维
-category: 产品
+category: Product
 tags: Product
 keywords: Product thinking
 

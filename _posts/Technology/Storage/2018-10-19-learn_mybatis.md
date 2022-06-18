@@ -2,7 +2,7 @@
 
 layout: post
 title: mybatis学习
-category: 技术
+category: Technology
 tags: Storage
 keywords: mysql mybatis
 

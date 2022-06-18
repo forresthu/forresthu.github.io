@@ -2,7 +2,7 @@
 
 layout: post
 title: Kubernetes 控制器模型
-category: 技术
+category: Technology
 tags: Kubernetes
 keywords: kubernetes controller
 

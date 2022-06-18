@@ -2,7 +2,7 @@
 
 layout: post
 title: 机器学习训练框架概述
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords: ml framework
 

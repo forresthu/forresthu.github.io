@@ -2,7 +2,7 @@
 
 layout: post
 title: GPU与容器的结合
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords:  gpu
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: 多角度理解一致性
-category: 技术
+category: Technology
 tags: Distribute
 keywords: 一致性协议
 

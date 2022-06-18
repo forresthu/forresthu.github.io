@@ -2,7 +2,7 @@
 
 layout: post
 title: kubernetes扩缩容
-category: 技术
+category: Technology
 tags: Kubernetes
 keywords: kubernetes autoscaler
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: 容器狂占资源怎么办？
-category: 技术
+category: Technology
 tags: Container
 keywords: container cpu
 

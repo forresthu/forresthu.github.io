@@ -2,7 +2,7 @@
 
 layout: post
 title: 《反应式设计模式》笔记
-category: 架构
+category: Architecture
 tags: Reactive
 keywords: project
 

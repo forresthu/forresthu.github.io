@@ -2,7 +2,7 @@
 
 layout: post
 title: 发布平台系统设计
-category: 架构
+category: Architecture
 tags: Practice
 keywords: publish system
 

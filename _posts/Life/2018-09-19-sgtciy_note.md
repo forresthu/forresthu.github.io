@@ -2,7 +2,7 @@
 
 layout: post
 title: 《so good they can't ignore you》笔记
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 认知
 

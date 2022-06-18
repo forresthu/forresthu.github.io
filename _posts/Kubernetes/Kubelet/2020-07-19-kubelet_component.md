@@ -2,7 +2,7 @@
 
 layout: post
 title: kubelet 组件分析
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords:  kubelet 组件分析
 

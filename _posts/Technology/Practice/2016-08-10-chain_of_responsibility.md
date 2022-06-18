@@ -2,7 +2,7 @@
 
 layout: post
 title: 链式处理的那些套路
-category: 技术
+category: Technology
 tags: Practice
 keywords: commons-chain
 

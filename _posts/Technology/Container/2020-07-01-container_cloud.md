@@ -2,7 +2,7 @@
 
 layout: post
 title: 对容器云平台的理解
-category: 技术
+category: Technology
 tags: Container
 keywords: docker
 

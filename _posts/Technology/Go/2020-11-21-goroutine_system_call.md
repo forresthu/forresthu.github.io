@@ -2,7 +2,7 @@
 
 layout: post
 title: golang 系统调用与阻塞处理
-category: 技术
+category: Technology
 tags: Go
 keywords: Go goroutine scheduler
 

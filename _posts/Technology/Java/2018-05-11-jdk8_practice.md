@@ -2,7 +2,7 @@
 
 layout: post
 title: java8 实践
-category: 技术
+category: Technology
 tags: Java
 keywords: java forkjoin
 

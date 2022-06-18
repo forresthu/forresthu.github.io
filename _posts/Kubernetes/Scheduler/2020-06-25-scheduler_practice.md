@@ -2,7 +2,7 @@
 
 layout: post
 title: 调度实践
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords:  Scheduler
 

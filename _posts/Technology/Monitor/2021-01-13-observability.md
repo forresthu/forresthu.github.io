@@ -2,7 +2,7 @@
 
 layout: post
 title: 可观察性和监控系统
-category: 架构
+category: Architecture
 tags: Monitor
 keywords: observability
 

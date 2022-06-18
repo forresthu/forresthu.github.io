@@ -2,7 +2,7 @@
 
 layout: post
 title: 《Elasticsearch权威指南》笔记
-category: 技术
+category: Technology
 tags: Storage
 keywords: elasticsearch
 

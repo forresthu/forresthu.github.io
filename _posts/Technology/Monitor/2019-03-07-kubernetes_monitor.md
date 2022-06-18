@@ -2,7 +2,7 @@
 
 layout: post
 title: Kubernetes监控
-category: 技术
+category: Technology
 tags: Kubernetes
 keywords: Kubernetes monitor
 

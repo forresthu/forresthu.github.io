@@ -2,7 +2,7 @@
 
 layout: post
 title: Jedis源码分析
-category: 技术
+category: Technology
 tags: Java
 keywords: jedis,spring-data-redis
 

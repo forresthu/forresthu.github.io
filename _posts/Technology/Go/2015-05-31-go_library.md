@@ -2,7 +2,7 @@
 
 layout: post
 title: Go常用的一些库
-category: 技术
+category: Technology
 tags: Go
 keywords: Go library
 

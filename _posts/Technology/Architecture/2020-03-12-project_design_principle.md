@@ -2,7 +2,7 @@
 
 layout: post
 title: 业务系统设计原则
-category: 架构
+category: Architecture
 tags: Architecture
 keywords: system design principle 
 

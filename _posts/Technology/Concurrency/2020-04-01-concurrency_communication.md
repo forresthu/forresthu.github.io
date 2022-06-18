@@ -2,7 +2,7 @@
 
 layout: post
 title: 并发通信模型
-category: 技术
+category: Technology
 tags: Concurrency
 keywords: Java  concurrency
 

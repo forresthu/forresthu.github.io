@@ -2,7 +2,7 @@
 
 layout: post
 title: 当我在说模板引擎的时候，我在说什么
-category: 架构
+category: Architecture
 tags: Practice
 keywords: template engine
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: 猿性的弱点
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 认知
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: 你或许应该学一门乐器，比如吉他
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 生活 音乐
 

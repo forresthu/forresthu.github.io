@@ -2,7 +2,7 @@
 
 layout: post
 title: 《实现领域驱动设计》笔记
-category: 架构
+category: Architecture
 tags: DDD
 keywords: ddd cqrs
 

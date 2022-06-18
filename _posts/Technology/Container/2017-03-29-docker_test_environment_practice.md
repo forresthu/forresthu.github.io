@@ -2,7 +2,7 @@
 
 layout: post
 title: 测试环境docker化实践
-category: 技术
+category: Technology
 tags: Container
 keywords: Docker,macvlan
 

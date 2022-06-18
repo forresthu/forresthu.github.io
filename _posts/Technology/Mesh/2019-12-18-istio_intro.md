@@ -2,7 +2,7 @@
 
 layout: post
 title: istio学习
-category: 架构
+category: Architecture
 tags: Mesh
 keywords: istio
 

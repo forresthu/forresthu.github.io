@@ -2,7 +2,7 @@
 
 layout: post
 title: 程序猿应该知道的
-category: 技术
+category: Technology
 tags: Code
 keywords: 程序猿应该知道的
 

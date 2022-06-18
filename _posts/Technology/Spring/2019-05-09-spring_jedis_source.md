@@ -2,7 +2,7 @@
 
 layout: post
 title: spring redis 源码分析
-category: 技术
+category: Technology
 tags: Spring
 keywords: kafka
 

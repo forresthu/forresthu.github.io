@@ -2,7 +2,7 @@
 
 layout: post
 title: 《技术的本质》笔记
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 技术的本质
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: 大模型训练
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords: large model
 

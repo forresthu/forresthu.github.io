@@ -2,7 +2,7 @@
 
 layout: post
 title: IntelliJ IDEA使用
-category: 技术
+category: Technology
 tags: Tool
 keywords: IntelliJ IDEA
 

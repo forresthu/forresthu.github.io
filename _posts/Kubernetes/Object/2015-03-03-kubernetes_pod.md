@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kubernetes pod 组件
-category: 技术
+category: Technology
 tags: Kubernetes
 keywords: Kubernetes Pod
 

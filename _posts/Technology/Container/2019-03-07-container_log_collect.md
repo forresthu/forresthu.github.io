@@ -2,7 +2,7 @@
 
 layout: post
 title: 容器日志采集
-category: 技术
+category: Technology
 tags: Container
 keywords: container log collect
 

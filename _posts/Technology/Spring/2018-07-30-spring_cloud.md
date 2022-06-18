@@ -2,7 +2,7 @@
 
 layout: post
 title: spring cloud 初识
-category: 技术
+category: Technology
 tags: Spring
 keywords: spring cloud
 

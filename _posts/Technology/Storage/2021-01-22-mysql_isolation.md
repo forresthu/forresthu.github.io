@@ -2,7 +2,7 @@
 
 layout: post
 title: mysql 事务的隔离级别
-category: 技术
+category: Technology
 tags: Storage
 keywords: mysql transaction isolation mvcc
 

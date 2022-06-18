@@ -2,7 +2,7 @@
 
 layout: post
 title: AQS1——论文学习
-category: 技术
+category: Technology
 tags: Concurrency
 keywords: java aqs
 

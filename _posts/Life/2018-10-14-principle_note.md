@@ -2,7 +2,7 @@
 
 layout: post
 title: 《原则》笔记
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 原则
 

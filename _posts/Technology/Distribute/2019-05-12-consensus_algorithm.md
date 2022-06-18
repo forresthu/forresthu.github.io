@@ -2,7 +2,7 @@
 
 layout: post
 title: 共识算法
-category: 技术
+category: Technology
 tags: Distribute
 keywords: 一致性协议
 

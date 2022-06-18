@@ -2,7 +2,7 @@
 
 layout: post
 title: 学习分布式
-category: 技术
+category: Technology
 tags: Distribute
 keywords: 分布式系统
 

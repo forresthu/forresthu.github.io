@@ -2,7 +2,7 @@
 
 layout: post
 title: 用技术解决“非技术”问题
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: technology
 

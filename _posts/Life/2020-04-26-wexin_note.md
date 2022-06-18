@@ -2,7 +2,7 @@
 
 layout: post
 title: 微信读书笔记
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 系统之美
 

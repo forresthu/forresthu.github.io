@@ -2,7 +2,7 @@
 
 layout: post
 title: 函数式编程的设计模式
-category: 架构
+category: Architecture
 tags: Architecture
 keywords: functional programming patterns
 

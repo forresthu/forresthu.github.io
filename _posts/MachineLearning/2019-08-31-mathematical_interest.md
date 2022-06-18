@@ -2,7 +2,7 @@
 
 layout: post
 title: 直觉上理解深度学习
-category: 技术
+category: Technology
 tags: MachineLearning
 keywords: 深度学习
 

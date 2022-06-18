@@ -2,7 +2,7 @@
 
 layout: post
 title: Go并发机制及语言层工具
-category: 技术
+category: Technology
 tags: Go
 keywords: Go Concurrence
 

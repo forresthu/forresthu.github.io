@@ -2,7 +2,7 @@
 
 layout: post
 title: Prometheus 源码分析
-category: 技术
+category: Technology
 tags: Monitor
 keywords: Prometheus Source
 

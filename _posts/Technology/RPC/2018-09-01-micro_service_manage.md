@@ -2,7 +2,7 @@
 
 layout: post
 title: 业务程序猿眼中的微服务管理
-category: 架构
+category: Architecture
 tags: RPC
 keywords: dubbo micro service
 

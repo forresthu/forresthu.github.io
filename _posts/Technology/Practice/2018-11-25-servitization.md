@@ -2,7 +2,7 @@
 
 layout: post
 title: 服务化
-category: 架构
+category: Architecture
 tags: Practice
 keywords: 服务化
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ThreadLocal小结
-category: 技术
+category: Technology
 tags: Concurrency
 keywords: ThreadLocal 线程安全
 ---

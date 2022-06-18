@@ -2,7 +2,7 @@
 
 layout: post
 title: 《软件设计之美》笔记
-category: 架构
+category: Architecture
 tags: Architecture
 keywords: system design principle 
 

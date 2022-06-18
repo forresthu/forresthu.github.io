@@ -2,7 +2,7 @@
 
 layout: post
 title: docker和k8s安全访问机制
-category: 技术
+category: Technology
 tags: Kubernetes
 keywords: kubernetes security
 

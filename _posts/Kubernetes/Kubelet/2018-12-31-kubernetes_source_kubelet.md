@@ -2,7 +2,7 @@
 
 layout: post
 title: Kubernetes源码分析——kubelet
-category: 技术
+category: Technology
 tags: Kubernetes
 keywords: kubernetes 源码分析 kubelet
 

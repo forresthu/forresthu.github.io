@@ -2,7 +2,7 @@
 
 layout: post
 title: 《自己动手写docker》笔记
-category: 技术
+category: Technology
 tags: Container
 keywords: Docker
 

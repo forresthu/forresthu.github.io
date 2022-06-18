@@ -2,7 +2,7 @@
 
 layout: post
 title: 《程序员的数学基础课》笔记
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: math
 

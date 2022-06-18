@@ -2,7 +2,7 @@
 
 layout: post
 title: 为容器选择一个合适的entrypoint
-category: 技术
+category: Technology
 tags: Container
 keywords: container entrypoint
 

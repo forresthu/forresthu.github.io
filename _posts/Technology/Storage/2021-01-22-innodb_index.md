@@ -2,7 +2,7 @@
 
 layout: post
 title: mysql 索引
-category: 技术
+category: Technology
 tags: Storage
 keywords: mysql index
 

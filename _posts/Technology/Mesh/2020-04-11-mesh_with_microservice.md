@@ -2,7 +2,7 @@
 
 layout: post
 title: 与微服务框架整合
-category: 技术
+category: Technology
 tags: Mesh
 keywords: mesh microservice
 

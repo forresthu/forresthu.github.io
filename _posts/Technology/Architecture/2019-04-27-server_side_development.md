@@ -2,7 +2,7 @@
 
 layout: post
 title: 服务器端编程
-category: 架构
+category: Architecture
 tags: Architecture
 keywords: server programming
 

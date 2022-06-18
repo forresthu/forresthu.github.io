@@ -2,7 +2,7 @@
 
 layout: post
 title: pytorch与线性回归
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords:  线性回归 pytorch
 

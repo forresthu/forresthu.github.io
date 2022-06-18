@@ -2,7 +2,7 @@
 
 layout: post
 title: 《netty in action》读书笔记
-category: 技术
+category: Technology
 tags: Netty
 keywords: JAVA netty
 

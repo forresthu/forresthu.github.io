@@ -2,7 +2,7 @@
 
 layout: post
 title: kaggle泰坦尼克问题实践
-category: 技术
+category: Technology
 tags: MachineLearning
 keywords: 深度学习
 

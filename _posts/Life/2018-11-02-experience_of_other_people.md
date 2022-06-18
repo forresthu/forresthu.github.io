@@ -2,7 +2,7 @@
 
 layout: post
 title: 如何看待大牛的经验文
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 认知
 

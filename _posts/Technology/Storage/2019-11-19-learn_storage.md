@@ -2,7 +2,7 @@
 
 layout: post
 title: 学习存储
-category: 技术
+category: Technology
 tags: Storage
 keywords: TIDB
 

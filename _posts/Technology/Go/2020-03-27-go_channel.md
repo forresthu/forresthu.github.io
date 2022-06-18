@@ -2,7 +2,7 @@
 
 layout: post
 title: go channel
-category: 技术
+category: Technology
 tags: Go
 keywords: Go defer
 

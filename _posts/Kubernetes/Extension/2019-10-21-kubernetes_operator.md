@@ -2,7 +2,7 @@
 
 layout: post
 title: kubernetes operator
-category: 技术
+category: Technology
 tags: Kubernetes
 keywords: kubernetes operator
 

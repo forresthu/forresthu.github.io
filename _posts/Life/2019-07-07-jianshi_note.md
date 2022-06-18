@@ -2,7 +2,7 @@
 
 layout: post
 title: 《见识》笔记
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 见识 吴军
 

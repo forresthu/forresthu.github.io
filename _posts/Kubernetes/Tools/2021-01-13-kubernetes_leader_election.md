@@ -2,7 +2,7 @@
 
 layout: post
 title: 基于Kubernetes选主及应用
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords:  Kubernetes event
 

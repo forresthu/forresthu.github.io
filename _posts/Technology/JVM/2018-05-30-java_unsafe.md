@@ -2,7 +2,7 @@
 
 layout: post
 title: Unsafe
-category: 技术
+category: Technology
 tags: JVM
 keywords: java unsafe
 

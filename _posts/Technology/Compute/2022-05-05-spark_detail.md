@@ -2,7 +2,7 @@
 
 layout: post
 title: Spark 内存管理及调优
-category: 技术
+category: Technology
 tags: Compute
 keywords: Spark
 

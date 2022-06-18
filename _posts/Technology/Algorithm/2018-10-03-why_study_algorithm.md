@@ -2,7 +2,7 @@
 
 layout: post
 title: 为什么很多业务程序猿觉得数据结构和算法没用？
-category: 技术
+category: Technology
 tags: Algorithm
 keywords: 数据结构与算法之美
 

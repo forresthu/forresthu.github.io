@@ -2,7 +2,7 @@
 
 layout: post
 title: 总纲——如何学习分布式系统
-category: 技术
+category: Technology
 tags: Distribute
 keywords: 分布式系统
 

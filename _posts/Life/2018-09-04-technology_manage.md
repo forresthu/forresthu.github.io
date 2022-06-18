@@ -2,7 +2,7 @@
 
 layout: post
 title: 尝试带好一个小团队
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: technology manage
 

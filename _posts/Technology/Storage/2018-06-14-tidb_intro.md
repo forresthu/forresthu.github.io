@@ -2,7 +2,7 @@
 
 layout: post
 title: TIDB 学习
-category: 技术
+category: Technology
 tags: Storage
 keywords: TIDB
 

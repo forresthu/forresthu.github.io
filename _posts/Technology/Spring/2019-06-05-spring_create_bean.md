@@ -2,7 +2,7 @@
 
 layout: post
 title: Spring 创建Bean的年代变迁
-category: 技术
+category: Technology
 tags: Spring
 keywords: springboot
 

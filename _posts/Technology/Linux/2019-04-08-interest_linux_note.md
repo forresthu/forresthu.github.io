@@ -2,7 +2,7 @@
 
 layout: post
 title: 《趣谈Linux操作系统》笔记
-category: 技术
+category: Technology
 tags: Linux
 keywords: linux命令 
 

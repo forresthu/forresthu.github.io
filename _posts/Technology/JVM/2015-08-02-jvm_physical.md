@@ -2,7 +2,7 @@
 
 layout: post
 title: JVM执行
-category: 技术
+category: Technology
 tags: JVM
 keywords: jvm
 

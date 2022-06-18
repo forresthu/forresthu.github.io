@@ -2,7 +2,7 @@
 
 layout: post
 title: Kubernetes介绍
-category: 技术
+category: Technology
 tags: Kubernetes
 keywords: kubernetes 
 

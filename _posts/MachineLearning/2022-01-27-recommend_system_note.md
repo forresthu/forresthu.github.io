@@ -2,7 +2,7 @@
 
 layout: post
 title: 《深度学习推荐系统实战》笔记
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords: recommender system
 

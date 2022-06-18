@@ -2,7 +2,7 @@
 
 layout: post
 title: kubernetes yaml配置
-category: 技术
+category: Technology
 tags: Kubernetes
 keywords: kubernetes yaml
 

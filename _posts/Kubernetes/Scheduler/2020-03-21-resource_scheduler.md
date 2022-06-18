@@ -2,7 +2,7 @@
 
 layout: post
 title: 资源调度泛谈
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords: resource scheduler
 

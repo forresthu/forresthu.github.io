@@ -2,7 +2,7 @@
 
 layout: post
 title: mysql 事务
-category: 技术
+category: Technology
 tags: Storage
 keywords: mysql transaction 
 

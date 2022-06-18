@@ -2,7 +2,7 @@
 
 layout: post
 title: 分布式事务
-category: 技术
+category: Technology
 tags: Distribute
 keywords: 分布式事务
 

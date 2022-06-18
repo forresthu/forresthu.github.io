@@ -2,7 +2,7 @@
 
 layout: post
 title: Kubernetes 实践
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords:  Kubernetes practice
 

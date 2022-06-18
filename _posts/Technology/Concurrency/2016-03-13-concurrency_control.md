@@ -2,7 +2,7 @@
 
 layout: post
 title: 并发控制相关的硬件与内核支持
-category: 技术
+category: Technology
 tags: Concurrency
 keywords: concurrency control
 

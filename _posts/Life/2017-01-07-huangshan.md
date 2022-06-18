@@ -2,7 +2,7 @@
 
 layout: post
 title: 有些地方，值得去他个春夏秋冬
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: 生活 程序员 户外
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: 在离线业务混部
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords:  Kubernetes 混部
 

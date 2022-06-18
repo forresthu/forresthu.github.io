@@ -2,7 +2,7 @@
 
 layout: post
 title: MOSN简介
-category: 技术
+category: Technology
 tags: Mesh
 keywords: Go mosn service mesh
 

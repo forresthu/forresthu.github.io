@@ -2,7 +2,7 @@
 
 layout: post
 title: 基于docker搭建测试环境(二)
-category: 技术
+category: Technology
 tags: Container
 keywords: Docker jenkins python
 

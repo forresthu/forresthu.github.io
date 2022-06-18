@@ -2,7 +2,7 @@
 
 layout: post
 title: Scheduler扩展
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords: Scheduler Extender
 ---

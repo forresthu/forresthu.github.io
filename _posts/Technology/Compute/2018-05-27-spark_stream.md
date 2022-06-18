@@ -2,7 +2,7 @@
 
 layout: post
 title: Spark Stream 学习
-category: 技术
+category: Technology
 tags: Compute
 keywords: Spark
 

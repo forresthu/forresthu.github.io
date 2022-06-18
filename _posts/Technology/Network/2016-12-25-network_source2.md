@@ -2,7 +2,7 @@
 
 layout: post
 title: Linux网络源代码学习——数据包的发送与接收
-category: 技术
+category: Technology
 tags: Network
 keywords: network 
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: 《技术管理36讲》笔记
-category: 生活
+category: Lifestyle
 tags: Life
 keywords: technology manage
 

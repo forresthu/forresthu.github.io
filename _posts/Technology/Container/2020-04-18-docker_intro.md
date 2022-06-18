@@ -2,7 +2,7 @@
 
 layout: post
 title: docker 架构
-category: 技术
+category: Technology
 tags: Container
 keywords: docker
 

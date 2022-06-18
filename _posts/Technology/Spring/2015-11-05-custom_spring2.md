@@ -2,7 +2,7 @@
 
 layout: post
 title: 自己动手写spring（二） 创建一个bean工厂
-category: 技术
+category: Technology
 tags: Spring
 keywords: Java Spring
 

@@ -2,7 +2,7 @@
 
 layout: post
 title:  实时训练
-category: 架构
+category: Architecture
 tags: MachineLearning
 keywords: 实时训练
 

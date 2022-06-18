@@ -2,7 +2,7 @@
 
 layout: post
 title: Goroutine 调度过程
-category: 技术
+category: Technology
 tags: Go
 keywords: Go goroutine scheduler
 

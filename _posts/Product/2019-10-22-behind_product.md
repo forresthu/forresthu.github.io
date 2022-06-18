@@ -2,7 +2,7 @@
 
 layout: post
 title: 《幕后产品》笔记
-category: 产品
+category: Product
 tags: Product
 keywords: Product thinking
 

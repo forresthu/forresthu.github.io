@@ -2,7 +2,7 @@
 
 layout: post
 title: 学习mesh
-category: 技术
+category: Technology
 tags: Mesh
 keywords: mosn detail
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: influxdb入门
-category: 技术
+category: Technology
 tags: Storage
 keywords: influxdb
 

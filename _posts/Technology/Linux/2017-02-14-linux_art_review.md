@@ -2,7 +2,7 @@
 
 layout: post
 title: 《Linux内核设计的艺术》小结
-category: 技术
+category: Technology
 tags: Linux
 keywords: linux kernel 
 

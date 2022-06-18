@@ -2,7 +2,7 @@
 
 layout: post
 title: 以新的角度看数据结构
-category: 技术
+category: Technology
 tags: Algorithm
 keywords: 数据结构
 

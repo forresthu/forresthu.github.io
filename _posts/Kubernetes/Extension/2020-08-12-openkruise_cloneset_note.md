@@ -2,7 +2,7 @@
 
 layout: post
 title: openkruise cloneset学习
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords: openkruise
 ---

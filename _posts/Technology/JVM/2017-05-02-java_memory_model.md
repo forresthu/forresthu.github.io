@@ -2,7 +2,7 @@
 
 layout: post
 title: java内存模型
-category: 技术
+category: Technology
 tags: JVM
 keywords: JAVA memory model
 

@@ -2,7 +2,7 @@
 
 layout: post
 title: 神经网络模型优化
-category: 技术
+category: Technology
 tags: MachineLearning
 keywords: 深度学习
 

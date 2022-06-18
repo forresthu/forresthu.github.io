@@ -2,7 +2,7 @@
 
 layout: post
 title: 喜马拉雅容器化实践
-category: 架构
+category: Architecture
 tags: Kubernetes
 keywords:  Kubernetes ximalaya
 

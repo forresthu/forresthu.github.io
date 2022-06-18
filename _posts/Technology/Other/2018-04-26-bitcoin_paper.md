@@ -2,7 +2,7 @@
 
 layout: post
 title: 中本聪比特币白皮书 细读
-category: 技术
+category: Technology
 tags: Other
 keywords: block chain
 
