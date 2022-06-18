@@ -1,23 +1,45 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+permalink: /:year/:month/:day/:title.html
+paginate: 10
+# markdown: rdiscount
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
 
-# Site settings
-title: Forrest's Blog
-email: forresthu at hotmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+# 作者信息
+author: 
+  name: Forrest Hu
+  email: 
+  link: 
+  weibo: 
+  github: https://forresthu.github.io
 
-# Build settings
-markdown: kramdown
+# 站点信息
+title: Forrest Hu's Blogs
+description: Forrest Hu's blogs
+url: https://forresthu.github.io
+rss_url: 
 
-theme: jekyll-theme-midnight
+# gavatar头像及Favicon
+gavatar: /public/upload/gavatar/gavatar.jpg
+favicon: /public/upload/gavatar/favicon.ico
+
+# google analytics 设置
+# google_analytics_tracking_id:
+# ga:
+#   id: UA-108442533-1
+#   url: 
+
+# disqus 设置
+# disqus:
+#   shortname: qiankunli
+
+# gitment
+# gitment:
+#   id: ddbaadab5f5d810805c3
+#   secret: 13b91b306680f11a55713382529b83259ef56546
+
+# 主题设置，自动激活某个标签
+active: 技术
+
+plugins:
+- jekyll-paginate
