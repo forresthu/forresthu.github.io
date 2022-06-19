@@ -43,3 +43,11 @@ active: 技术
 
 plugins:
 - jekyll-paginate
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      render_with_liquid: false

@@ -5,6 +5,7 @@ title: helm
 category: Architecture
 tags: Kubernetes
 keywords:  Kubernetes 混部
+render_with_liquid: false
 
 ---
 

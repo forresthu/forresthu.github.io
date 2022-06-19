@@ -5,6 +5,7 @@ title: Prometheus 告警学习
 category: Technology
 tags: Monitor
 keywords: Prometheus alert
+render_with_liquid: false
 
 ---
 

@@ -5,6 +5,7 @@ title: 关于docker image的那点事儿
 category: Technology
 tags: Container
 keywords: Docker image Dockerfile
+render_with_liquid: false
 
 ---
 ## 简介
