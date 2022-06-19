@@ -43,6 +43,7 @@ active: 技术
 
 plugins:
 - jekyll-paginate
+- jekyll-seo-tag
 
 defaults:
   -
