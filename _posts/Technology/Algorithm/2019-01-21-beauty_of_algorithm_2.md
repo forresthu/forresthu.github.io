@@ -5,7 +5,7 @@ title: 《数据结构与算法之美》——算法新解
 category: Technology
 tags: Algorithm
 keywords: 数据结构与算法之美
-
+usemathjax: true
 ---
 
 ## 简介
@@ -16,6 +16,8 @@ keywords: 数据结构与算法之美
 建议看下前文 [《数据结构与算法之美》——数据结构笔记](http://qiankunli.github.io/2018/09/19/beauty_of_algorithm_1.html)
 
 思考的过程比结论更重要。
+
+$$\sum(Z)$$
 
 ## 字符串匹配
 
