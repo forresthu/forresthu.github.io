@@ -14,16 +14,24 @@
   --accent-soft: rgba(11, 125, 109, 0.09);
   --shadow: 0 1px 2px rgba(20, 24, 30, 0.04), 0 4px 16px rgba(20, 24, 30, 0.05);
 
-  /* 代码高亮 */
-  --code-bg: #f4f2ed;
-  --code-text: #24292f;
-  --hl-comment: #6e7781;
-  --hl-keyword: #b42318;
-  --hl-string: #0a3069;
-  --hl-number: #0550ae;
-  --hl-function: #6639ba;
-  --hl-type: #953800;
-  --hl-attr: #116329;
+  /* 行内代码 */
+  --inline-code-bg: #f0ebe3;
+  --inline-code-text: #b4401a;
+
+  /* 代码块：两种主题下都用深色面板，和正文形成明显对比 */
+  --code-bg: #1e252e;
+  --code-header-bg: #161c23;
+  --code-border: #1e252e;
+  --code-text: #e6edf3;
+  --code-muted: #8b98a5;
+  --code-shadow: 0 2px 4px rgba(20, 24, 30, 0.06), 0 8px 24px rgba(20, 24, 30, 0.10);
+  --hl-comment: #8b98a5;
+  --hl-keyword: #ff7b72;
+  --hl-string: #a5d6ff;
+  --hl-number: #79c0ff;
+  --hl-function: #d2a8ff;
+  --hl-type: #ffa657;
+  --hl-attr: #7ee787;
 
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB",
     "Microsoft YaHei", "Noto Sans SC", "Source Han Sans SC", "Helvetica Neue", Arial, sans-serif;
@@ -49,15 +57,12 @@
     --accent-hover: #7dd8c5;
     --accent-soft: rgba(79, 196, 172, 0.12);
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.25);
-    --code-bg: #1a2026;
-    --code-text: #d6dde4;
-    --hl-comment: #7d8a96;
-    --hl-keyword: #ff7b72;
-    --hl-string: #a5d6ff;
-    --hl-number: #79c0ff;
-    --hl-function: #d2a8ff;
-    --hl-type: #ffa657;
-    --hl-attr: #7ee787;
+    --inline-code-bg: #252d35;
+    --inline-code-text: #f2a47c;
+    --code-bg: #0b0f13;
+    --code-header-bg: #131920;
+    --code-border: #2f3842;
+    --code-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
     color-scheme: dark;
   }
 }
@@ -73,15 +78,12 @@
   --accent-hover: #7dd8c5;
   --accent-soft: rgba(79, 196, 172, 0.12);
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.25);
-  --code-bg: #1a2026;
-  --code-text: #d6dde4;
-  --hl-comment: #7d8a96;
-  --hl-keyword: #ff7b72;
-  --hl-string: #a5d6ff;
-  --hl-number: #79c0ff;
-  --hl-function: #d2a8ff;
-  --hl-type: #ffa657;
-  --hl-attr: #7ee787;
+  --inline-code-bg: #252d35;
+  --inline-code-text: #f2a47c;
+  --code-bg: #0b0f13;
+  --code-header-bg: #131920;
+  --code-border: #2f3842;
+  --code-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
   color-scheme: dark;
 }
 
@@ -453,7 +455,7 @@ img { max-width: 100%; height: auto; }
    ========================================================================== */
 .prose { color: var(--text); overflow-wrap: break-word; }
 .prose > :first-child { margin-top: 0; }
-.prose p, .prose ul, .prose ol, .prose blockquote, .prose table, .prose pre, .prose .highlighter-rouge {
+.prose p, .prose ul, .prose ol, .prose blockquote, .prose table, .prose pre, .prose div.highlighter-rouge {
   margin: 0 0 1.15em;
 }
 .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
@@ -507,52 +509,89 @@ img { max-width: 100%; height: auto; }
 
 /* 行内代码 */
 .prose :not(pre) > code {
-  padding: .15em .4em;
+  padding: .12em .42em;
   border-radius: 5px;
-  background: var(--code-bg);
-  color: var(--code-text);
+  background: var(--inline-code-bg);
+  color: var(--inline-code-text);
   font-family: var(--font-mono);
   font-size: .86em;
+  overflow-wrap: anywhere;
 }
+.prose a > code { color: inherit; }
 
-/* 代码块 */
-.prose pre {
-  position: relative;
-  margin: 0;
-  padding: 16px 18px;
-  overflow-x: auto;
-  border: 1px solid var(--border);
+/* 代码块：外层是深色面板，顶部有语言标签和复制按钮 */
+.prose div.highlighter-rouge,
+.prose figure.highlight,
+.prose > pre {
+  margin: 1.6em 0;
+  border: 1px solid var(--code-border);
   border-radius: var(--radius);
+  background: var(--code-bg);
+  box-shadow: var(--code-shadow);
+  overflow: hidden;
+}
+.prose div.highlighter-rouge .highlight { margin: 0; background: none; }
+
+.prose pre {
+  margin: 0;
+  padding: 16px 20px;
+  overflow-x: auto;
   background: var(--code-bg);
   color: var(--code-text);
   font-family: var(--font-mono);
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 14.5px;
+  line-height: 1.65;
   tab-size: 4;
 }
-.prose pre code { font: inherit; background: none; padding: 0; }
-.prose .highlighter-rouge, .prose figure.highlight { position: relative; }
-.prose figure.highlight { margin: 0 0 1.15em; }
-.prose .highlighter-rouge .highlight { background: none; }
-.prose > pre { margin-bottom: 1.15em; }
+.prose pre code { font: inherit; color: inherit; background: none; padding: 0; }
+.prose div.highlighter-rouge pre, .prose figure.highlight pre { border: 0; border-radius: 0; }
+
+/* 代码块滚动条也用深色 */
+.prose pre::-webkit-scrollbar { height: 10px; }
+.prose pre::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, .16); border-radius: 10px; border: 3px solid var(--code-bg); }
+.prose pre { scrollbar-color: rgba(255, 255, 255, .2) transparent; }
+
+.code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  height: 38px;
+  padding: 0 8px 0 16px;
+  background: var(--code-header-bg);
+  border-bottom: 1px solid rgba(255, 255, 255, .06);
+  color: var(--code-muted);
+  font: 600 12px/1 var(--font-sans);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.code-header__lang { display: inline-flex; align-items: center; gap: 8px; }
+.code-header__lang::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--lang-color, var(--code-muted));
+}
 
 .copy-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  padding: 3px 9px;
-  border: 1px solid var(--border);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 26px;
+  padding: 0 10px;
+  border: 1px solid rgba(255, 255, 255, .12);
   border-radius: 6px;
-  background: var(--surface);
-  color: var(--muted);
-  font: 12px var(--font-sans);
+  background: transparent;
+  color: var(--code-muted);
+  font: 500 12px/1 var(--font-sans);
+  letter-spacing: 0;
+  text-transform: none;
   cursor: pointer;
-  opacity: 0;
-  transition: opacity .15s;
+  transition: color .15s, border-color .15s, background-color .15s;
 }
-.highlighter-rouge:hover .copy-btn, figure.highlight:hover .copy-btn, .copy-btn:focus-visible { opacity: 1; }
-.copy-btn:hover { color: var(--accent); border-color: var(--accent); }
-@media (hover: none) { .copy-btn { opacity: 1; } }
+.copy-btn:hover { color: #fff; border-color: rgba(255, 255, 255, .3); background: rgba(255, 255, 255, .06); }
+.copy-btn.is-copied { color: #7ee787; border-color: rgba(126, 231, 135, .4); }
 
 /* MathJax 公式过宽时横向滚动 */
 .prose mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
@@ -611,6 +650,6 @@ img { max-width: 100%; height: auto; }
 }
 
 @media print {
-  .site-header, .site-footer, .toc, .post-pager, .to-top, .copy-btn { display: none !important; }
+  .site-header, .site-footer, .toc, .post-pager, .to-top, .code-header { display: none !important; }
   body { background: #fff; color: #000; }
 }
