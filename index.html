@@ -1,37 +1,41 @@
 ---
 layout: page
 title: 首页
+hide_title: true
 ---
 
-<br>
-<div class="row">
-  <div class="col-md-12">
-    <div class="panel panel-primary">
-      <div class="panel-heading">{{ site.locals.newest }}</div>
-      {% for post in paginator.posts %}
-        <a  href='{{ post.url }}' class="list-group-item pjaxlink clearfix">
-          {{post.title}}
-          <span class="badge">{{ post.date | date:"%Y年%m月%d日" }}</span>
-        </a>
-      {% endfor %}
+<section class="intro">
+  <h1 class="intro__title">{{ site.title }}</h1>
+  <p class="intro__text">技术、架构与生活随笔 · 共 {{ site.posts.size }} 篇文章</p>
+</section>
+
+<ol class="post-list">
+  {% for post in paginator.posts %}
+  <li class="post-card">
+    <h2 class="post-card__title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <div class="post-meta">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      {% if post.category %}<span>·</span><a href="/pages/categories.html#{{ post.category | slugify }}">{{ post.category }}</a>{% endif %}
+      {% for tag in post.tags %}<a class="chip" href="/pages/tags.html#{{ tag | slugify }}">{{ tag }}</a>{% endfor %}
     </div>
-  </div>
-  {% for cate in site.cates %}
-    <div class="col-md-12">
-      <div class="panel panel-primary">
-        <div class="panel-heading">{{ cate }}</div>
-        {% for tag in site.tags %} 
-          {% if tag[0] == cate %}
-            {% for post in tag[1] %}
-              <a  href='{{ post.url }}' class="list-group-item pjaxlink clearfix">
-                {{post.title}}
-                <span class="badge">{{ post.date | date:"%Y年%m月%d日" }}</span>
-              </a>
-            {% endfor %}
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
+    {% if post.description %}
+      {% assign excerpt = post.description %}
+    {% else %}
+      {% assign excerpt = post.content | strip_html | strip | remove_first: "简介" | strip_newlines | strip | truncate: 140 %}
+    {% endif %}
+    <p class="post-card__excerpt">{{ excerpt }}</p>
+  </li>
   {% endfor %}
-</div>
- 
+</ol>
+
+{% if paginator.total_pages > 1 %}
+<nav class="pagination" aria-label="分页">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | replace: 'index.html', '' }}">← 较新</a>
+  {% else %}<span class="is-disabled">← 较新</span>{% endif %}
+  <span class="pagination__status">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}">较旧 →</a>
+  {% else %}<span class="is-disabled">较旧 →</span>{% endif %}
+</nav>
+{% endif %}

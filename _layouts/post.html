@@ -1,26 +1,47 @@
 ---
 layout: base
 ---
+{% assign chars = content | strip_html | size %}
+{% assign minutes = chars | divided_by: 500 | plus: 1 %}
+<div class="post-layout">
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <div class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+        {% if page.category %}<span>·</span><a href="/pages/categories.html#{{ page.category | slugify }}">{{ page.category }}</a>{% endif %}
+        {% for tag in page.tags %}<a class="chip" href="/pages/tags.html#{{ tag | slugify }}">{{ tag }}</a>{% endfor %}
+        <span>·</span><span>约 {{ minutes }} 分钟</span>
+      </div>
+    </header>
 
-<div class="row">
-  <div class="col-md-12 aside3-title">
-    <br>
-    <h2 id="#identifier">{{ page.title }}</h2>
-    {{ page.date | date:"%Y年%m月%d日" }}
-  </div>
-  <div class="col-md-12 aside3-content">
-    <hr>
-    <div id="content">
+    <details class="toc toc--inline" hidden>
+      <summary>目录</summary>
+      <nav class="toc__list" aria-label="文章目录"></nav>
+    </details>
+
+    <div class="prose" id="content" {% if page.usemathjax %}data-mathjax{% endif %}>
       {{ content }}
     </div>
-    <hr>
-    
-  <!-- 目录 -->
-  <div id="content_table" style="position:fixed;right:20px;top:120px;display:none;">
-    <div class="panel panel-success">
-      <div class="panel-body" id="nav"></div>
-    </div>
-  </div>
+
+    <nav class="post-pager" aria-label="上一篇 / 下一篇">
+      {% if page.previous %}
+      <a class="post-pager__item" href="{{ page.previous.url }}">
+        <span class="post-pager__label">← 上一篇</span>
+        <span class="post-pager__title">{{ page.previous.title }}</span>
+      </a>
+      {% else %}<span></span>{% endif %}
+      {% if page.next %}
+      <a class="post-pager__item post-pager__item--next" href="{{ page.next.url }}">
+        <span class="post-pager__label">下一篇 →</span>
+        <span class="post-pager__title">{{ page.next.title }}</span>
+      </a>
+      {% endif %}
+    </nav>
+  </article>
+
+  <aside class="toc toc--side" hidden>
+    <div class="toc__title">目录</div>
+    <nav class="toc__list" aria-label="文章目录"></nav>
+  </aside>
 </div>
-
-

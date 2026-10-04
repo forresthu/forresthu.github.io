@@ -1,0 +1,19 @@
+<nav class="chip-cloud" aria-label="{{ page.title }}">
+  {% for group in include.groups %}
+  <a class="chip chip--lg" href="#{{ group[0] | slugify }}">{{ group[0] }}<span class="chip__count">{{ group[1].size }}</span></a>
+  {% endfor %}
+</nav>
+
+{% for group in include.groups %}
+<section class="term" id="{{ group[0] | slugify }}">
+  <h2 class="term__title">{{ group[0] }} <span class="term__count">{{ group[1].size }}</span></h2>
+  <ul class="link-list">
+    {% for post in group[1] %}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}

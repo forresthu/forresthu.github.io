@@ -1,27 +1,20 @@
 <meta charset="utf-8">
-<title>{{ page.title }} | {{ site.title }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="{{ site.author.name }}">
-{% if page.keywords %}
-  <meta name="keywords" content="{{ page.keywords }}">
-{% endif %}
-{% if page.description  %}
-  <meta name="description " content="{{ page.description  }}">
-{% endif %}
-<link rel="shortcut icon" href="{{ site.favicon }}" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/public/css/bootstrap.css">
-<link rel="stylesheet" href="/public/css/font-awesome.css">
-<link rel="stylesheet" href="/public/js/prettify/prettify.css">
-<link rel="stylesheet" href="/public/css/base.css">
-<link href="/pages/atom.xml" rel="alternate" title="{{site.title}}" type="application/atom+xml">
-
-
-    <!-- for mathjax support -->
+{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+<meta name="color-scheme" content="light dark">
+<link rel="shortcut icon" href="{{ site.favicon }}">
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/pages/atom.xml">
+<script>
+  /* 尽早应用主题，避免闪烁 */
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
+<link rel="stylesheet" href="/public/css/main.css">
 {% if page.usemathjax %}
-      <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-        TeX: { equationNumbers: { autoNumber: "AMS" } }
-        });
-      </script>
-      <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+  window.MathJax = { tex: { tags: 'ams' }, options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] } };
+</script>
 {% endif %}
