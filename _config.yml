@@ -15,7 +15,8 @@ author:
 
 # 站点信息
 title: Forrest Hu's Blogs
-description: Forrest Hu's blogs
+description: Forrest Hu 的技术博客：分布式系统、Kubernetes、机器学习、Go / Java 与架构实践笔记，以及一些生活随笔。
+lang: zh_CN
 url: https://forresthu.github.io
 rss_url: 
 
@@ -43,7 +44,11 @@ active: 技术
 
 plugins:
 - jekyll-paginate
-- jekyll-seo-tag
+- jekyll-sitemap
+
+# Google Search Console 验证：把 Search Console 给的 HTML 标签里 content 的值填到这里
+# webmaster_verifications:
+#   google: xxxxxxxxxxxxxxxx
 
 defaults:
   -

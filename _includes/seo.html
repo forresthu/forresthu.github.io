@@ -1,0 +1,92 @@
+{% comment %}
+  自己生成 SEO 标签，而不是用 jekyll-seo-tag：
+  文章的第一段总是 "## 简介" 标题，插件会把它当成每篇文章的 description。
+  这里改为取正文开头的文字作为摘要。
+{% endcomment %}
+{% assign is_post = false %}{% if page.collection == 'posts' %}{% assign is_post = true %}{% endif %}
+{% assign is_home = false %}{% if page.url == '/' or paginator.page %}{% assign is_home = true %}{% endif %}
+
+{% if is_home %}
+  {% assign seo_title = site.title %}
+  {% if paginator.page > 1 %}{% capture seo_title %}{{ site.title }} · 第 {{ paginator.page }} 页{% endcapture %}{% endif %}
+{% else %}
+  {% capture seo_title %}{{ page.title }} | {{ site.title }}{% endcapture %}
+{% endif %}
+
+{% if page.description %}
+  {% assign seo_desc = page.description %}
+{% elsif is_post %}
+  {% comment %} 从第一个正文段落开始取，跳过 "简介" 标题和 kramdown 生成的目录 {% endcomment %}
+  {% assign paragraphs = page.content | split: '<p>' %}
+  {% assign body_size = paragraphs | size | minus: 1 %}
+  {% assign seo_desc = paragraphs | slice: 1, body_size | join: ' ' | replace: '</', ' </' | strip_html | strip_newlines | replace: "  ", " " | strip | truncate: 150 %}
+  {% if seo_desc == '' %}{% assign seo_desc = site.description %}{% endif %}
+{% else %}
+  {% assign seo_desc = site.description %}
+{% endif %}
+{% assign seo_desc = seo_desc | strip_html | strip_newlines | strip | escape_once %}
+
+{% assign seo_url = page.url | replace: 'index.html', '' | absolute_url %}
+{% assign seo_image = site.gavatar | absolute_url %}
+
+<title>{{ seo_title | strip }}</title>
+<meta name="description" content="{{ seo_desc }}">
+<link rel="canonical" href="{{ seo_url }}">
+{% if paginator.previous_page_path %}
+  {% assign prev_path = paginator.previous_page_path | replace: 'index.html', '' %}
+  {% assign last_char = prev_path | slice: -1 %}{% if last_char != '/' %}{% assign prev_path = prev_path | append: '/' %}{% endif %}
+<link rel="prev" href="{{ prev_path | absolute_url }}">
+{% endif %}
+{% if paginator.next_page_path %}
+  {% assign next_path = paginator.next_page_path %}
+  {% assign last_char = next_path | slice: -1 %}{% if last_char != '/' %}{% assign next_path = next_path | append: '/' %}{% endif %}
+<link rel="next" href="{{ next_path | absolute_url }}">
+{% endif %}
+
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="{{ site.lang | default: 'zh_CN' }}">
+<meta property="og:title" content="{{ seo_title | strip | escape_once }}">
+<meta property="og:description" content="{{ seo_desc }}">
+<meta property="og:url" content="{{ seo_url }}">
+<meta property="og:image" content="{{ seo_image }}">
+<meta name="twitter:card" content="summary">
+{% if is_post %}
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{% for tag in page.tags %}<meta property="article:tag" content="{{ tag }}">{% endfor %}
+{% else %}
+<meta property="og:type" content="website">
+{% endif %}
+
+{% if site.webmaster_verifications.google %}
+<meta name="google-site-verification" content="{{ site.webmaster_verifications.google }}">
+{% endif %}
+
+<script type="application/ld+json">
+{% if is_post %}
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ seo_desc | jsonify }},
+  "url": {{ seo_url | jsonify }},
+  "mainEntityOfPage": {{ seo_url | jsonify }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+  "inLanguage": "zh-CN",
+  "keywords": {{ page.keywords | default: page.tags | jsonify }},
+  "image": {{ seo_image | jsonify }},
+  "author": { "@type": "Person", "name": {{ site.author.name | jsonify }}, "url": {{ site.url | jsonify }} }
+}
+{% else %}
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ site.title | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "url": {{ site.url | append: '/' | jsonify }},
+  "inLanguage": "zh-CN",
+  "author": { "@type": "Person", "name": {{ site.author.name | jsonify }} }
+}
+{% endif %}
+</script>
