@@ -20,8 +20,8 @@ url: https://forresthu.github.io
 rss_url: 
 
 # gavatar头像及Favicon
-gavatar: /public/upload/gavatar/gavatar.jpg
-favicon: /public/upload/gavatar/favicon.ico
+gavatar: /public/upload/gavatar/avatar.jpg
+favicon: /public/upload/gavatar/favicon.png
 
 # google analytics 设置
 # google_analytics_tracking_id:
