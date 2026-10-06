@@ -43,8 +43,15 @@
 <link rel="next" href="{{ next_path | absolute_url }}">
 {% endif %}
 
+{% comment %} 双语文章：互相声明 hreflang，告诉搜索引擎这是同一篇的两个语言版本 {% endcomment %}
+{% if page.translation_url %}
+<link rel="alternate" hreflang="{{ page.lang | default: 'zh-CN' }}" href="{{ seo_url }}">
+<link rel="alternate" hreflang="{{ page.translation_lang }}" href="{{ page.translation_url | absolute_url }}">
+{% endif %}
+
+{% assign og_locale = 'zh_CN' %}{% if page.lang == 'en' %}{% assign og_locale = 'en_US' %}{% endif %}
 <meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:locale" content="{{ site.lang | default: 'zh_CN' }}">
+<meta property="og:locale" content="{{ og_locale }}">
 <meta property="og:title" content="{{ seo_title | strip | escape_once }}">
 <meta property="og:description" content="{{ seo_desc }}">
 <meta property="og:url" content="{{ seo_url }}">
@@ -73,7 +80,7 @@
   "mainEntityOfPage": {{ seo_url | jsonify }},
   "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
   "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
-  "inLanguage": "zh-CN",
+  "inLanguage": {{ page.lang | default: 'zh-CN' | jsonify }},
   "keywords": {{ page.keywords | default: page.tags | jsonify }},
   "image": {{ seo_image | jsonify }},
   "author": { "@type": "Person", "name": {{ site.author.name | jsonify }}, "url": {{ site.url | jsonify }} }

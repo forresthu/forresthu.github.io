@@ -1,8 +1,23 @@
 ---
 layout: base
 ---
-{% assign chars = content | strip_html | size %}
-{% assign minutes = chars | divided_by: 500 | plus: 1 %}
+{% comment %} 阅读时长：中文按字数估，英文按词数估 {% endcomment %}
+{% assign plain = content | strip_html %}
+{% if page.lang == 'en' %}
+  {% assign minutes = plain | number_of_words | divided_by: 220 | plus: 1 %}
+  {% capture read_time %}{{ minutes }} min read{% endcapture %}
+  {% assign t_toc = 'Contents' %}
+  {% assign t_prev = '← Previous' %}
+  {% assign t_next = 'Next →' %}
+  {% assign t_pager = 'Previous / next post' %}
+{% else %}
+  {% assign minutes = plain | size | divided_by: 500 | plus: 1 %}
+  {% capture read_time %}约 {{ minutes }} 分钟{% endcapture %}
+  {% assign t_toc = '目录' %}
+  {% assign t_prev = '← 上一篇' %}
+  {% assign t_next = '下一篇 →' %}
+  {% assign t_pager = '上一篇 / 下一篇' %}
+{% endif %}
 <div class="post-layout">
   <article class="post">
     <header class="post-header">
@@ -11,29 +26,29 @@ layout: base
         <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
         {% if page.category %}<span>·</span><a href="/pages/categories.html#{{ page.category | slugify }}">{{ page.category }}</a>{% endif %}
         {% for tag in page.tags %}<a class="chip" href="/pages/tags.html#{{ tag | slugify }}">{{ tag }}</a>{% endfor %}
-        <span>·</span><span>约 {{ minutes }} 分钟</span>
+        <span>·</span><span>{{ read_time }}</span>
       </div>
     </header>
 
     <details class="toc toc--inline" hidden>
-      <summary>目录</summary>
-      <nav class="toc__list" aria-label="文章目录"></nav>
+      <summary>{{ t_toc }}</summary>
+      <nav class="toc__list" aria-label="{{ t_toc }}"></nav>
     </details>
 
     <div class="prose" id="content" {% if page.usemathjax %}data-mathjax{% endif %}>
       {{ content }}
     </div>
 
-    <nav class="post-pager" aria-label="上一篇 / 下一篇">
+    <nav class="post-pager" aria-label="{{ t_pager }}">
       {% if page.previous %}
       <a class="post-pager__item" href="{{ page.previous.url }}">
-        <span class="post-pager__label">← 上一篇</span>
+        <span class="post-pager__label">{{ t_prev }}</span>
         <span class="post-pager__title">{{ page.previous.title }}</span>
       </a>
       {% else %}<span></span>{% endif %}
       {% if page.next %}
       <a class="post-pager__item post-pager__item--next" href="{{ page.next.url }}">
-        <span class="post-pager__label">下一篇 →</span>
+        <span class="post-pager__label">{{ t_next }}</span>
         <span class="post-pager__title">{{ page.next.title }}</span>
       </a>
       {% endif %}
@@ -41,7 +56,7 @@ layout: base
   </article>
 
   <aside class="toc toc--side" hidden>
-    <div class="toc__title">目录</div>
-    <nav class="toc__list" aria-label="文章目录"></nav>
+    <div class="toc__title">{{ t_toc }}</div>
+    <nav class="toc__list" aria-label="{{ t_toc }}"></nav>
   </aside>
 </div>
