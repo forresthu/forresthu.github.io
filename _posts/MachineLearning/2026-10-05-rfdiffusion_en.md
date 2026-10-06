@@ -7,6 +7,7 @@ tags: MachineLearning
 keywords: RFdiffusion diffusion model protein design SE3 self-conditioning
 description: RFdiffusion from an ML angle - diffusion on the SE(3) manifold, fine-tuning a pretrained structure predictor into a denoiser, how conditioning is injected, and evaluating designs with a round-trip metric.
 lang: en
+image: /public/upload/og/rfdiffusion-en.png
 translation_url: /2026/10/05/rfdiffusion.html
 translation_lang: zh-CN
 

@@ -7,6 +7,7 @@ tags: MachineLearning
 keywords: RFdiffusion diffusion model protein design SE3 self-conditioning
 description: 从 ML 的角度读 RFdiffusion：SE(3) 流形上的扩散过程、把预训练的结构预测网络微调成去噪器、条件注入的几种方式，以及用另一个模型做 round-trip 验收的评测思路。
 lang: zh-CN
+image: /public/upload/og/rfdiffusion.png
 translation_url: /2026/10/05/rfdiffusion_en.html
 translation_lang: en
 

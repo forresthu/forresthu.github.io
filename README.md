@@ -89,6 +89,45 @@ keywords: 关键词
 - 支持 MathJax 公式（`$$...$$`），只在包含公式的页面加载。
 - 文章内容不执行 Liquid（`render_with_liquid: false`），代码里的 `{{ }}`、`{% %}` 会原样显示。
 
+## 社交分享图
+
+每篇文章可以带一张 1200×630 的分享预览图（LinkedIn、Twitter、微信里贴链接时显示的大图）。没有的话会退回用头像的小图。
+
+```bash
+scripts/og/make-card.sh rfdiffusion-en.png \
+  "RFdiffusion: Diffusion Models on Protein Structure" \
+  "Diffusion on the SE(3) manifold, and what transfers back to ordinary ML." \
+  "Machine Learning"
+```
+
+图片生成到 `public/upload/og/`，然后在文章 front matter 里引用：
+
+```yaml
+image: /public/upload/og/rfdiffusion-en.png
+```
+
+脚本用无头 Chrome 渲染 `scripts/og/template.html`，所以改模板就能改版式。中英文标题都支持，标题过长会自动缩小一档字号。
+
+## 双语文章
+
+同一篇文章写两份时，用 front matter 把两边关联起来，搜索引擎就知道它们是同一篇的不同语言版本，而不是重复内容：
+
+```yaml
+# 中文版
+lang: zh-CN
+translation_url: /2026/10/05/rfdiffusion_en.html
+translation_lang: en
+
+# 英文版
+lang: en
+translation_url: /2026/10/05/rfdiffusion.html
+translation_lang: zh-CN
+```
+
+`lang: en` 还会让这篇文章的阅读时长按词数（而不是字数）估算，目录和上一篇/下一篇的标签也切换成英文。
+
+英文文章会自动进入 `/feed-en.xml`（只含 `lang: en` 的文章），可以把这个 feed 接到 Zapier / Make / dlvr.it 之类的服务上，自动转发到 LinkedIn。全部文章的 feed 仍然是 `/pages/atom.xml`。
+
 ## 目录结构
 
 ```

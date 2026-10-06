@@ -27,7 +27,16 @@
 {% assign seo_desc = seo_desc | strip_html | strip_newlines | strip | escape_once %}
 
 {% assign seo_url = page.url | replace: 'index.html', '' | absolute_url %}
-{% assign seo_image = site.gavatar | absolute_url %}
+{% comment %} 分享卡片：文章有 image 就用大图，否则退回头像小图 {% endcomment %}
+{% if page.image %}
+  {% assign seo_image = page.image | absolute_url %}
+  {% assign twitter_card = 'summary_large_image' %}
+{% else %}
+  {% assign seo_image = site.gavatar | absolute_url %}
+  {% assign twitter_card = 'summary' %}
+{% endif %}
+{% comment %} 分享卡片的标题不带站点名，省出宽度 {% endcomment %}
+{% if is_home %}{% assign share_title = seo_title %}{% else %}{% assign share_title = page.title %}{% endif %}
 
 <title>{{ seo_title | strip }}</title>
 <meta name="description" content="{{ seo_desc }}">
@@ -52,11 +61,14 @@
 {% assign og_locale = 'zh_CN' %}{% if page.lang == 'en' %}{% assign og_locale = 'en_US' %}{% endif %}
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:locale" content="{{ og_locale }}">
-<meta property="og:title" content="{{ seo_title | strip | escape_once }}">
+<meta property="og:title" content="{{ share_title | strip | escape_once }}">
 <meta property="og:description" content="{{ seo_desc }}">
 <meta property="og:url" content="{{ seo_url }}">
 <meta property="og:image" content="{{ seo_image }}">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="{{ twitter_card }}">
+<meta name="twitter:title" content="{{ share_title | strip | escape_once }}">
+<meta name="twitter:description" content="{{ seo_desc }}">
+<meta name="twitter:image" content="{{ seo_image }}">
 {% if is_post %}
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
