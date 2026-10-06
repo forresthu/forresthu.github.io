@@ -46,9 +46,9 @@ plugins:
 - jekyll-paginate
 - jekyll-sitemap
 
-# Google Search Console 验证：把 Search Console 给的 HTML 标签里 content 的值填到这里
-# webmaster_verifications:
-#   google: xxxxxxxxxxxxxxxx
+# Google Search Console 验证：Search Console 给的 HTML 标签里 content 的值
+webmaster_verifications:
+  google: j9heOBsm0AEBp_0oUFvEpLcNlRtYvy9r42FPTYtu5wU
 
 defaults:
   -
