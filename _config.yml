@@ -52,6 +52,16 @@ plugins:
 webmaster_verifications:
   google: j9heOBsm0AEBp_0oUFvEpLcNlRtYvy9r42FPTYtu5wU
 
+# 不发布到站点的文件（显式写出 Jekyll 的默认值，因为 exclude 会覆盖默认列表）
+exclude:
+  - scripts        # 本地构建工具，不是站点内容
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - .jekyll-cache
+  - .sass-cache
+  - node_modules
+
 defaults:
   -
     scope:
