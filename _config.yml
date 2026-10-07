@@ -1,4 +1,6 @@
 permalink: /:year/:month/:day/:title.html
+# 固定时区，否则 GitHub Pages 用 UTC 构建，带时间的文章日期会错一天
+timezone: America/New_York
 paginate: 10
 # markdown: rdiscount
 kramdown:
