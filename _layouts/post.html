@@ -20,6 +20,9 @@ layout: base
 {% endif %}
 <div class="post-layout">
   <article class="post">
+    {% if page.banner %}
+    <div class="post-banner"><img src="{{ page.banner | relative_url }}" alt="{{ page.title }}" loading="eager"></div>
+    {% endif %}
     <header class="post-header">
       <h1 class="post-title">{{ page.title }}</h1>
       <div class="post-meta">

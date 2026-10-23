@@ -5,6 +5,8 @@ date: 2026-10-22 21:52:00 -0400
 categories: [Biology, Biotechnology, RNA Editing]
 tags: [CRISPR, AGO2, ALTER, RNA碱基编辑, 蛋白质工程, 合成生物学]
 lang: zh
+image: /public/upload/og/beyond-crispr-ago2-zh.png
+banner: /public/upload/og/beyond-crispr-ago2-banner.png
 ---
 
 *阅读时间：约 8 分钟*

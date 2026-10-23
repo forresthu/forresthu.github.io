@@ -385,6 +385,19 @@ img { max-width: 100%; height: auto; }
   letter-spacing: -0.015em;
 }
 
+/* 文章头图 */
+.post-banner {
+  margin: 0 0 24px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.post-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .post-pager {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -5,6 +5,8 @@ date: 2026-10-22 21:52:00 -0400
 categories: [Biology, Biotechnology, RNA Editing]
 tags: [CRISPR, AGO2, ALTER, RNA Base Editing, Protein Engineering, Synthetic Biology]
 lang: en
+image: /public/upload/og/beyond-crispr-ago2-en.png
+banner: /public/upload/og/beyond-crispr-ago2-banner.png
 ---
 
 *Reading Time: ~8 minutes*
