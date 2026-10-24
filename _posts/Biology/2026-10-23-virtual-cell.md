@@ -25,12 +25,12 @@ At its core, a **Virtual Cell** is an executable mathematical and computational 
 $$S_{t + \Delta t} = \mathcal{F}_\theta(S_t, P, E)$$
 
 Where:
-- \\(S_t\\) represents the high-dimensional multi-modal state of the cell at time \\(t\\) (encompassing chromatin accessibility, transcriptomic counts, proteomic abundances, spatial organelle topology, and metabolic flux).
+- \\(S\_t\\) represents the high-dimensional multi-modal state of the cell at time \\(t\\) (encompassing chromatin accessibility, transcriptomic counts, proteomic abundances, spatial organelle topology, and metabolic flux).
 - \\(P\\) represents an external or internal **perturbation vector** (e.g., a CRISPRi gene knockdown, a base-editing variant, a small-molecule drug concentration, or an engineered synthetic receptor).
 - \\(E\\) represents the **extracellular microenvironment** (e.g., paracrine cytokine gradients, extracellular matrix stiffness, hypoxia, or adjacent cell-cell contact such as a T-cell immunological synapse).
-- \\(\mathcal{F}_\theta\\) is the learned or mechanistic transition operator parameterized by \\(\theta\\) that predicts the future state distribution \\(S_{t + \Delta t}\\).
+- \\(\mathcal{F}\_\theta\\) is the learned or mechanistic transition operator parameterized by \\(\theta\\) that predicts the future state distribution \\(S\_{t + \Delta t}\\).
 
-If we can parameterize \\(\mathcal{F}_\theta\\) accurately, we gain the ability to run millions of **zero-shot *in silico* experiments** in minutes—asking counterfactual questions like: *"What combination of three transcription factors will reprogram a senescent fibroblast back into a juvenile homeostatic state without crossing an oncogenic attractor boundary?"*
+If we can parameterize \\(\mathcal{F}\_\theta\\) accurately, we gain the ability to run millions of **zero-shot *in silico* experiments** in minutes—asking counterfactual questions like: *"What combination of three transcription factors will reprogram a senescent fibroblast back into a juvenile homeostatic state without crossing an oncogenic attractor boundary?"*
 
 ---
 
@@ -40,7 +40,7 @@ The ambition to simulate a cell on a computer is not new. However, the underlyin
 
 | Generation | Era | Core Mathematical Paradigm | Landmark Projects & Frameworks | Strengths | Fundamental Bottlenecks |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **1st Gen: Mechanistic & Biophysical** | 1990s–2010s | Coupled Ordinary/Partial Differential Equations (ODEs/PDEs), Gillespie Stochastic Simulation, Reaction-Diffusion | **VCell** (UConn), **E-Cell**, **COPASI** | Exact physical interpretability; preserves mass action & thermodynamic laws | Requires exact kinetic rate constants (\\(k_{on}, k_{off}, K_m\\)) which are unknown for >95% of cellular reactions; cannot scale to whole genomes |
+| **1st Gen: Mechanistic & Biophysical** | 1990s–2010s | Coupled Ordinary/Partial Differential Equations (ODEs/PDEs), Gillespie Stochastic Simulation, Reaction-Diffusion | **VCell** (UConn), **E-Cell**, **COPASI** | Exact physical interpretability; preserves mass action & thermodynamic laws | Requires exact kinetic rate constants (\\(k\_{on}, k\_{off}, K\_m\\)) which are unknown for >95% of cellular reactions; cannot scale to whole genomes |
 | **2nd Gen: Hybrid Whole-Cell Integration** | 2012–2020 | Modular Hybrid Coupling (Flux Balance Analysis FBA + ODEs + Stochastic Poisson processes) | ***Mycoplasma genitalium* Whole-Cell Model** (Covert Lab), **Vivarium** | First complete lifecycle simulation of a living prokaryote from genotype to division | Labor-intensive manual curation; brittle coupling between sub-models; intractable for complex eukaryotic/human cells |
 | **3rd Gen: AI Virtual Cell (AIVC)** | 2021–Present | Multimodal Foundation Models (Transformers, Graph Neural Networks, Latent Flow Matching & Diffusion) | **scGPT**, **Geneformer**, **UCE**, **scLDM**, **CZI Virtual Cell Platform** | Learns emergent regulatory grammar directly from 100M+ single-cell atlases; generalizes zero-shot to unseen perturbations | Requires massive interventional (Perturb-seq) training data to move from correlation to true biological causality |
 
@@ -93,7 +93,7 @@ At the foundational layer, the virtual cell must understand the physical chemist
 ### Tier 2: The Subcellular and Cellular State Layer (\\(10^{-6}\\) to \\(10^{-5}\\) m)
 This is the core engine of the virtual cell, where molecular interactions integrate into organelle dynamics and whole-cell state transitions.
 - **Universal Cell Embeddings (UCE):** Models such as **scGPT**, **Geneformer**, and **UCE** ingest sparse, high-dimensional single-cell RNA-seq and ATAC-seq matrices and project them into a unified, batch-corrected **Latent State Manifold**. On this manifold, every point represents a valid physiological state of a cell, and valleys represent stable "attractor states" (Waddington's epigenetic landscape).
-- **Latent Flow Matching & Diffusion for Perturbation Modeling:** While early transformer models excelled at cell-type annotation and gene network inference, predicting the exact quantitative distribution of a cell population after a novel drug or CRISPR perturbation requires generative probability transport. State-of-the-art architectures (such as **scLDM**, **CellOT**, and **Optimal Transport Flow Matching**) encode the unperturbed control cell distribution \\(p_0(z)\\) in latent space and learn a continuous vector field \\(v_t(z | P)\\) conditioned on perturbation \\(P\\) to transport the cell along a biologically plausible trajectory to the perturbed state \\(p_1(z)\\).
+- **Latent Flow Matching & Diffusion for Perturbation Modeling:** While early transformer models excelled at cell-type annotation and gene network inference, predicting the exact quantitative distribution of a cell population after a novel drug or CRISPR perturbation requires generative probability transport. State-of-the-art architectures (such as **scLDM**, **CellOT**, and **Optimal Transport Flow Matching**) encode the unperturbed control cell distribution \\(p\_0(z)\\) in latent space and learn a continuous vector field \\(v\_t(z \| P)\\) conditioned on perturbation \\(P\\) to transport the cell along a biologically plausible trajectory to the perturbed state \\(p\_1(z)\\).
 - **Spatial Subcellular Grounding:** By fusing **Cryo-ET (Cryo-Electron Tomography)** and multiplexed immunofluorescence imaging (e.g., OpenCell) via Vision Transformers (ViTs), the cellular layer tracks not just *how much* protein exists, but *where* it localizes—whether a transcription factor has translocated from the cytoplasm into the nucleus or partitioned into a transcriptional condensate.
 
 ### Tier 3: The Multicellular and Microenvironmental Layer (\\(10^{-4}\\) to \\(10^{-2}\\) m)
@@ -111,13 +111,13 @@ When we transition from static biological atlases to an interactive, predictive 
 In complex polygenic diseases—such as neurodegenerative disorders, fibrotic diseases, or treatment-resistant cancers—knocking down or inhibiting a single target rarely suffices because cellular signaling networks possess robust compensatory feedback loops (e.g., inhibiting mTORC1 relieves negative feedback on RTK/IRS-1, paradoxically reactivating AKT). 
 
 An AI Virtual Cell enables **Phenotypic State-Space Steering**:
-1. Define the **Disease State Distribution** \\(S_{\text{disease}}\\) (derived from patient single-cell biopsies) and the target **Healthy State Distribution** \\(S_{\text{healthy}}\\).
-2. Run gradient-based inverse optimization (or high-throughput *in silico* sweeps) across millions of dual- and triple-target perturbations \\(P^*\\) that minimize the Wasserstein distance between \\(\mathcal{F}_\theta(S_{\text{disease}}, P^*)\\) and \\(S_{\text{healthy}}\\).
+1. Define the **Disease State Distribution** \\(S\_{\text{disease}}\\) (derived from patient single-cell biopsies) and the target **Healthy State Distribution** \\(S\_{\text{healthy}}\\).
+2. Run gradient-based inverse optimization (or high-throughput *in silico* sweeps) across millions of dual- and triple-target perturbations \\(P^\*\\) that minimize the Wasserstein distance between \\(\mathcal{F}\_\theta(S\_{\text{disease}}, P^\*)\\) and \\(S\_{\text{healthy}}\\).
 3. Filter out perturbations that push healthy bystander cell types (like cardiomyocytes or hepatocytes) toward toxic or apoptotic trajectories.
 
 ### 4.2 Programmable Cell Engineering & Synthetic Biology
 Cell therapies—such as CAR-T, TCR-T, and induced pluripotent stem cell (iPSC)-derived regenerative tissues—are living drugs. Yet engineering them today remains largely trial-and-error:
-- **Preventing T-Cell Exhaustion:** Before synthesizing a library of synthetic CAR constructs or executing multiplex CRISPR knockouts, bioengineers can simulate how chronic antigen stimulation in a hypoxic tumor microenvironment drives T cells toward terminal exhaustion (\\(T_{\text{ex}}\\)), identifying exact synthetic gene circuits or transcription factor overexpressions (e.g., *c-Jun*, *TCF7* modulation) that lock the cell in a stem-like effector memory state.
+- **Preventing T-Cell Exhaustion:** Before synthesizing a library of synthetic CAR constructs or executing multiplex CRISPR knockouts, bioengineers can simulate how chronic antigen stimulation in a hypoxic tumor microenvironment drives T cells toward terminal exhaustion (\\(T\_{\text{ex}}\\)), identifying exact synthetic gene circuits or transcription factor overexpressions (e.g., *c-Jun*, *TCF7* modulation) that lock the cell in a stem-like effector memory state.
 - **Deterministic Lineage Reprogramming:** Instead of spending years empirically tuning growth factor concentrations and timing windows to differentiate iPSCs into functional pancreatic \\(\beta\\)-cells or dopaminergic neurons, the virtual cell acts as an **MPC (Model Predictive Controller)**, calculating the optimal temporal sequence of morphogens and transcription factors to guide cells along the desired differentiation manifold with minimal off-target lineage drift.
 
 ### 4.3 Coupling De Novo Protein & RNA Design to Cellular Phenotypes
@@ -142,7 +142,7 @@ Over the past decade, initiatives like the Human Cell Atlas (HCA) and CZ CELLxGE
 - Observational data teaches an AI model **correlations** (which genes co-express in which cell types).
 - It does *not* reliably teach **causality** (if I Perturb Gene \\(A\\), does Gene \\(B\\) go up because \\(A\\) directly activates \\(B\\), or were both simply co-activated by an unmeasured upstream factor \\(C\\)?).
 
-In causal inference terms, observational data lives on the first rung of Judea Pearl's Ladder of Causation (\\(P(Y|X)\\)), whereas a Virtual Cell must operate on the second and third rungs—predicting interventions \\(P(Y | \text{do}(X))\\) and counterfactuals.
+In causal inference terms, observational data lives on the first rung of Judea Pearl's Ladder of Causation (\\(P(Y\|X)\\)), whereas a Virtual Cell must operate on the second and third rungs—predicting interventions \\(P(Y \| \text{do}(X))\\) and counterfactuals.
 
 ### The Lab-in-the-Loop Future
 To cross this causal chasm, the next five years of the Virtual Cell movement will be defined by **Active Learning and "Lab-in-the-Loop" infrastructure**:
