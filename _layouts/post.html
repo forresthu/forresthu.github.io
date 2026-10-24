@@ -10,6 +10,10 @@ layout: base
   {% assign t_prev = '← Previous' %}
   {% assign t_next = 'Next →' %}
   {% assign t_pager = 'Previous / next post' %}
+  {% assign t_read_aloud = 'Read aloud' %}
+  {% assign t_pause = 'Pause' %}
+  {% assign t_resume = 'Resume' %}
+  {% assign speech_lang = 'en-US' %}
 {% else %}
   {% assign minutes = plain | size | divided_by: 500 | plus: 1 %}
   {% capture read_time %}约 {{ minutes }} 分钟{% endcapture %}
@@ -17,6 +21,10 @@ layout: base
   {% assign t_prev = '← 上一篇' %}
   {% assign t_next = '下一篇 →' %}
   {% assign t_pager = '上一篇 / 下一篇' %}
+  {% assign t_read_aloud = '朗读' %}
+  {% assign t_pause = '暂停' %}
+  {% assign t_resume = '继续' %}
+  {% assign speech_lang = 'zh-CN' %}
 {% endif %}
 <div class="post-layout">
   <article class="post">
@@ -30,6 +38,12 @@ layout: base
         {% if page.category %}<span>·</span><a href="/pages/categories.html#{{ page.category | slugify }}">{{ page.category }}</a>{% endif %}
         {% for tag in page.tags %}<a class="chip" href="/pages/tags.html#{{ tag | slugify }}">{{ tag }}</a>{% endfor %}
         <span>·</span><span>{{ read_time }}</span>
+        <button type="button" class="chip read-aloud-btn" id="read-aloud" hidden
+          data-lang="{{ speech_lang }}" data-label-play="{{ t_read_aloud }}" data-label-pause="{{ t_pause }}" data-label-resume="{{ t_resume }}">
+          <svg class="icon read-aloud-btn__icon-play" viewBox="0 0 24 24" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+          <svg class="icon read-aloud-btn__icon-pause" viewBox="0 0 24 24" aria-hidden="true" hidden><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+          <span class="read-aloud-btn__label">{{ t_read_aloud }}</span>
+        </button>
       </div>
     </header>
 

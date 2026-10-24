@@ -302,6 +302,15 @@ img { max-width: 100%; height: auto; }
 .chip__count { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
 .chip:hover .chip__count { color: inherit; opacity: .8; }
 
+.read-aloud-btn {
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+.read-aloud-btn .icon { width: 13px; height: 13px; }
+.read-aloud-btn__icon-play { fill: currentColor; stroke: none; }
+.read-aloud-btn__icon-pause { fill: currentColor; stroke: none; }
+
 .pagination {
   display: flex;
   align-items: center;

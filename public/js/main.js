@@ -27,6 +27,59 @@
   var content = document.getElementById('content');
   if (!content) return;
 
+  /* 朗读本文（Web Speech API，不支持的浏览器直接隐藏按钮） */
+  var readBtn = document.getElementById('read-aloud');
+  if (readBtn && 'speechSynthesis' in window) {
+    readBtn.hidden = false;
+    var synth = window.speechSynthesis;
+    var iconPlay = readBtn.querySelector('.read-aloud-btn__icon-play');
+    var iconPause = readBtn.querySelector('.read-aloud-btn__icon-pause');
+    var label = readBtn.querySelector('.read-aloud-btn__label');
+    var state = 'idle'; /* idle | playing | paused */
+
+    var setState = function (next) {
+      state = next;
+      iconPlay.hidden = state === 'playing';
+      iconPause.hidden = state !== 'playing';
+      label.textContent = state === 'playing' ? readBtn.dataset.labelPause
+        : state === 'paused' ? readBtn.dataset.labelResume
+        : readBtn.dataset.labelPlay;
+    };
+
+    var buildUtterances = function () {
+      var clone = content.cloneNode(true);
+      clone.querySelectorAll('pre, code, .code-header, .mjx-assistive-mml, mjx-assistive-mml').forEach(function (el) { el.remove(); });
+      var blocks = clone.querySelectorAll('p, li, h2, h3, h4, blockquote, th, td, figcaption');
+      var texts = (blocks.length ? Array.prototype.map.call(blocks, function (el) { return el.innerText || el.textContent; }) : [clone.innerText || clone.textContent]);
+      return texts
+        .map(function (t) { return t.replace(/\s+/g, ' ').trim(); })
+        .filter(Boolean)
+        .map(function (t) {
+          var u = new SpeechSynthesisUtterance(t);
+          u.lang = readBtn.dataset.lang;
+          return u;
+        });
+    };
+
+    readBtn.addEventListener('click', function () {
+      if (state === 'idle') {
+        var utterances = buildUtterances();
+        if (!utterances.length) return;
+        utterances[utterances.length - 1].addEventListener('end', function () { setState('idle'); });
+        utterances.forEach(function (u) { synth.speak(u); });
+        setState('playing');
+      } else if (state === 'playing') {
+        synth.pause();
+        setState('paused');
+      } else {
+        synth.resume();
+        setState('playing');
+      }
+    });
+
+    window.addEventListener('beforeunload', function () { synth.cancel(); });
+  }
+
   /* 文章目录 */
   var headings = content.querySelectorAll(':scope > h2, :scope > h3');
   if (headings.length >= 3) {
