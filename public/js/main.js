@@ -120,7 +120,7 @@
     block.insertBefore(header, block.firstChild);
   });
 
-  /* 只有正文里确实有公式时才加载 MathJax */
+  /* 只有正文里确实有公式时才加载 MathJax（行内公式请用 \( \)，单个 $ 不会被识别） */
   if (content.hasAttribute('data-mathjax')) {
     var text = content.textContent;
     if (/\\\(|\\\[|\$\$|\\begin\{/.test(text)) {
